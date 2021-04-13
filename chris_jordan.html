@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>World_Cricket</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.C1{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		.logout{
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 20px;
+			background-color:red;
+			padding: 5px;
+			color: white;
+			width: 8%;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.book_tickets{
+				background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		
+		}
+		
+	</style>
+</head>
+<body>
+	<section>
+		<div class="C1" style="color: white;">CHRIS JORDAN <ins style="margin: right; text-decoration: none;font-size: 20px; font-family: verdana;"></ins> </div>
+	<div class="navbar">
+
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html" >ODI</a>
+				<a href="bowlers_ranking_test.html" >TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="domestic_league.html">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+</div>
+<body>
+<img src="https://st3.cricketcountry.com/wp-content/uploads/cricket/20140522033328.jpeg" width="680" height="483" align="right">
+	<p style="text-align: left;font-size: 25px;">Born in Barbados, Chris Jordan moved to England on the back of a sporting scholarship to Dulwich College. He burst on the county circuit as a 18-year old in 2007 when he picked up 20 wickets in five county championship games for Surrey.
+
+Unfortunately, injuries plagued him frequently after that and he ended up missing the entire 2010 season due to a back problem. His return in 2011 was not particularly impressive as he managed only 11 wickets, but he had a short stint with Barbados that winter and picked up 13 scalps. Coming back to Surrey in 2012, his form dipped and he was released at the end of that season. He again returned to Barbados and performed brilliantly, taking 16 wickets, this time at 15.18.
+
+Now, 2013 proved to be a fruitful year for Jordan as he signed up for Sussex. He took 6 for 48 on his debut against Yorkshire and was one of the leading wicket-takers in the County Championship. He earned an England Lions call-up for the ODI series against Bangladesh 'A' in August and was selected for the senior squad to face Ireland and Australia. He finally made his ODI debut against Australia and picked up three wickets in his first game in Southampton. This display earned him a spot in the limited overs squad for England's tour to Australia and West Indies in early 2014. His heroics in the third T20I against West Indies grabbed eye-balls as he picked up three wickets in the match to help his side to a consolation win after smashing Dwayne Bravo all over the park, including four sixes, to take 26 runs in the last over which gave England a competitive total on the board.
+
+Jordan has had an on-off time in the ODI side. After an excellent ODI series against Sri Lanka at home, where he picked up 12 wickets in five games, the selectors gave him his first Test cap against the same opposition. He also played three Tests against India and kept on improving as the series progressed, but he could not translate the same performances in the ODI series. He only played one game in the five-match series and was not consistent during the Sri Lanka tour. The resurgence of Chris Woakes also meant that Jordan was pushed down the pecking order.</p>

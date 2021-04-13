@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>World Cup Info</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">WORLD CUP INFO</header>
+	<div class="navbar">
+			<a href="worldcric.php ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="domestic_league.html">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+		<table>
+			<tr>
+				<th>YEAR</th>
+				<th>WINNERS</th>
+				<th>RUNNER UP</th>
+				<th>VENUE</th>
+			</tr>
+			<tr>
+				<td>1975</td>
+				<td>WEST INDIES</td>
+				<td>AUSTRALIA</td>
+				<td>LONDON</td>
+			</tr>
+			<tr>
+				<td>1979</td>
+				<td>WEST INDIES</td>
+				<td>ENGLAND</td>
+				<td>LONDON</td>
+			</tr>
+			<tr>
+				<td>1983</td>
+				<td>INDIA</td>
+				<td>WEST INDIES</td>
+				<td>LONDON</td>
+			</tr>
+			<tr>
+				<td>1987</td>
+				<td>AUSTRALIA</td>
+				<td>ENGLAND</td>
+				<td>KOLKATA</td>
+			</tr>
+			<tr>
+				<td>1992</td>
+				<td>PAKISTAN</td>
+				<td>ENGLAND</td>
+				<td>MELBOURNE</td>
+			</tr>
+			<tr>
+				<td>1996</td>
+				<td>SRI LANKA</td>
+				<td>AUSTRALIA</td>
+				<td>LAHORE</td>
+			</tr>
+			<tr>
+				<td>1999</td>
+				<td>AUSTRALIA</td>
+				<td>PAKISTAN</td>
+				<td>LONDON</td>
+			</tr>
+			<tr>
+				<td>2003</td>
+				<td>AUSTRALIA</td>
+				<td>INDIA</td>
+				<td>SANDTON</td>
+			</tr>
+			<tr>
+				<td>2011</td>
+				<td>INDIA</td>
+				<td>SRI LANKA</td>
+				<td>MUMBAI</td>
+			</tr>
+			<tr>
+				<td>2015</td>
+				<td>AUSTRALIA</td>
+				<td>NEW ZEALAND</td>
+				<td>MELBOURNE</td>
+			</tr>
+			<tr>
+				<td>2019</td>
+				<td>ENGLAND</td>
+				<td>NEW ZEALAND</td>
+				<td>LONDON</td>
+			</tr>
+		</table>
+	</body>

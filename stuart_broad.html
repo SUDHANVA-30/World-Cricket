@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">STUART BROAD</header>
+		<div class="navbar">
+			<a href="worldcric.php">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+	<img src="https://i.guim.co.uk/img/media/42812a997c65001851fffdf6ecdddf42262df678/344_389_5220_3132/master/5220.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=2976acb50bc15250a3ef504faef0397e"width="680" height="483" align="right">
+	<p style="text-align: left;font-size: 25px;">The son of current ICC match referee Chris Broad, Stuart Broad is a tall medium pacer who has impressed his way into the England team. His meteoric rise over the years led to the selectors appointing him as the England T20 captain at one point of time, but his reign didn't last long.
+
+Like his father, Stuart Broad ventured into playing cricket primarily as an opening batsman. However, he resorted to bowling because he did not want to stand around all day in the field. Following impressive showings at the U-19 level, Broad was selected to play in a T20 match against Pakistan in 2006. Broad put in a credible performance by just missing out on a hat-trick in the match.
+
+His turning point came in the 2007 ODI series against India when he shared a record 8th wicket stand of 99 with Bopara to guide England to a two-wicket win. Earlier, he had snapped up 4/51 in the India innings and that won him his first Man of the Match award.
+
+However, Broad had some torrid times ahead. He took a real pounding in the match against India in the 2007 T20 World Cup when Yuvraj Singh created history by carting him for six sixes in one over. Broad has never managed to shake that moment off, but his confidence and belief helped him overcome that blip.
+
+He toiled hard on his Test debut in Sri Lanka as he showed admirable heart in adverse circumstances. He starred with both bat and ball during the New Zealand and South Africa series, but he was at his best during England's victorious 2009 Ashes campaign. He had fired a warning shot against the Aussies at Headingley when he took 6/91 and blasted 61 off 49 balls. It was in the fifth Test at the Oval that Broad churned out his best ever performance. His spell of 5/37 ruined Australia's chances and helped England to victory.
+
+He also scored a century at Lords in the year 2010, something that his father had never achieved. It was his first ever century in any form of cricket and came when England needed it the most. His team was struggling at 102 for 7 against a brilliant Pakistan bowling attack and his 332-run world record stand with Trott helped England recover and seal the series.
+
+Broad had a poor Ashes tour of 2011 as it was cut short due to injuries and was out of the squad for most of the Test and ODI series. He was almost dropped from the side before the India tour but after being named in the team for the first Test, he went on to pick up 7 wickets in the match. He also scored a classy 74 not out in the second innings. The same brilliant form continued in the second Test when he hit an aggressive 64 with the bat and achieved superb bowling figures of 6-46 in the first innings, which included a hat-trick. His second innings contribution (44 runs and 2 wickets) was just as useful. He went on to take 6 wickets in the next two Tests as England completed a 4-0 series whitewash.
+
+Broad started the 2012 summer with a bang when he took 7/72 against West Indies in the first innings of the Test at Lords, becoming the 8th all-rounder to feature on both honours boards after his maiden Test century of 169 against Pakistan in 2010. He took another 4 wickets in the second innings to finish with Test best figures of 11/165 and became the first bowler to take a 10 wicket haul at Lords since Ian Botham in 1978.
+
+Later that year, Broad failed miserably against South Africa in the first Test as England bowlers suffered at the hands of South African top order batsmen. In the second Test, however, Broad did manage to make up for earlier mistakes finishing with figures of 5/69 as England ended the game in a draw. His dip in form continued into the Test series in India and he was dropped after the first Test. An injury kept him out of the ODIs and T20s but he returned to the side for the tour of New Zealand in 2013.
+</p>

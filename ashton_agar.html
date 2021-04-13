@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>World_Cricket</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.C1{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		.logout{
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 20px;
+			background-color:red;
+			padding: 5px;
+			color: white;
+			width: 8%;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.book_tickets{
+				background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		
+		}
+		
+	</style>
+</head>
+<body>
+	<section>
+		<div class="C1" style="color: white;">ASHTON AGAR <ins style="margin: right; text-decoration: none;font-size: 20px; font-family: verdana;"></ins> </div>
+	<div class="navbar">
+		
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html" >ODI</a>
+				<a href="bowlers_ranking_test.html" >TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="domestic_league.html">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+</div>
+<body>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2018.02.03.20.31.23-AUSvNZL_T20_NZL_innings%2C_SCG-0002_%2838618210190%29_%28Agar_cropped%29.jpg/260px-2018.02.03.20.31.23-AUSvNZL_T20_NZL_innings%2C_SCG-0002_%2838618210190%29_%28Agar_cropped%29.jpg"width="680" height="483" align="right">
+	<p style="text-align: left;font-size: 25px;">Not many knew about him until Michael Clarke decided to name him in the playing XI for the opening Test of the 2013 Ashes series in England. In fact the decision came as a big surprise as Clarke preferred a rookie ahead of an already experienced Nathan Lyon who was also in the squad.
+
+The game began and he didn't need to do much as his fast bowlers did the job for Australia and England were bowled out just before close of play on the first day. In reply, the Australians made a meal of their batting effort and were 117/9 when Ashton Agar joined Phil Hughes at the crease. The duo stunned England with a sensational 163-run last wicket stand as Agar was caught in the deep on 98. What's more, Australia also managed to get a handy lead.
+
+With the ball in the second innings, he picked up two wickets but he failed with the bat. Eventually, Australia went on to lose the match by 14 runs in what was one of the most dramatic finishes ever in Test match history. Hailing from Victoria, Agar plays for Western Australia and made his first-class debut in 2013. He represents the Perth Scorchers in the Big Bash League and also opens the innings at times.
+
+If Agar felt he was living a dream after his first Test, it turned out to be false hope. Reality sunk in soon after and he was dropped after just one more Test. Having started his career as a bowler, Agar is now a part of Western Australia's middle-order and has notched up two first-class hundreds. His bowling has improved with time and it wasn't a surprise that he was recalled into the national team in 2017 - ahead of the tour to India. He didn't get to play a Test, but was back in the mix for the series against Bangladesh, playing in his first Test four years after being dropped.
+
+Agar enjoyed a fairly reasonable series in Bangladesh, providing the ideal foil for his senior spin partner Nathan Lyon who ran riot. The hiatus seemed to have worked in Agar's favor as he displayed more guile in his bowling than was the case when he made his debut. At that time, all we could see was a left-arm spinner who mostly darted them in at a flatter trajectory. However, as he has grown, he has learnt the art of flighting the ball and getting it to dip on the batsmen apart from using the width of the crease to change angles.
+
+Agar is still a work in progress but his development as a cricketer, particularly with the ball will please Australia as they wouldn't have to find a successor for Lyon if and when the offie decides to hang up his boots. Agar always had the talent to bat and has consciously been working on it as well. Like many of Australia's lower-order batsmen, he also loves to put a price on his wicket. His performances in the BBL have proved that he can also handle white-ball cricket with ease. In fact, his all-round package is likely to see him feature regularly in the shorter formats at least in the near future although he will definitely be in the reckoning for Tests when Australia go to Asia.
+</p>

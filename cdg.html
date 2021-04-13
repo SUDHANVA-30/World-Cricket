@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-BOWLERS RANKING</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">COLIN DE GRANDHOMME</header>
+		<div class="navbar">
+			<a href="worldcric.php ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/2018.02.03.20.52.20-AUSvNZL_T20_NZL_innings%2C_SCG_%2838618201470%29_%28de_Grandhomme_cropped%29.jpg"  width="680" height="483" align="right">
+	<p style="text-align: left;font-size: 25px;">An explosive all-rounder, who is more suited to the abbreviated forms of the game, Colin de Grandhomme stepped up to the international circuit after setting a string of impressive domestic displays in motion. He hit 3 hundreds for Auckland in the Plunket Shield last year with his medium pace option coming as an additional boost. He also played a pivotal all-round role in Auckland winning the HRV T20 Cup in 2010-11.
+
+He was called up to the Blackcaps team for the home series against Zimbabwe and South Africa in 2012. Born in Zimbabwe, Grandhomme represented Zimbabwe in the Under-19 World Cup in 2004 before migrating to New Zealand in search of better opportunities. A national call up soon followed in 2012-13 for the shorter formats. His ball-striking skills and utility medium pace made him a good pick in limited-overs cricket.
+
+However, ironically, it was in his Test debut that de Grandhomme managed to make a bigger statement. He ran riot in the home series against Pakistan in the summer of 2016 on seaming pitches where his medium pace was enough as long as accuracy was there. His 6-fer on debut were the best figures by a New Zealand debutant. Although not a regular in the Test side since then, de Grandhomme is often considered on pitches that have movement in them. The reason for this is his ability to move the ball, even if at a moderate pace - a skill that grows in strength considerably on greenish tracks. Apart from this, his counter-attacking batting skills are also an added advantage.
+
+It's still early days in de Grandhomme's career but his ability to turn a match on its head makes him a very handy cricketer to have, particularly in white-ball cricket. If New Zealand decide to revamp their batting order in Tests, he could be a regular feature in the longest format as well. It can safely said that de Grandhomme is yet to translate his potential completely on the international stage although we have seen glimpses of his talent. New Zealand's love affair with all-rounders is well known and the Kiwis will hope that de Grandhomme is able to cement his spot across formats in the years to come.
+</p>

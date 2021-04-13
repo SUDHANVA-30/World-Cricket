@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">MITCHELL STARC</header>
+		<div class="navbar">
+			<a href="worldcric.php">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+	<img src="https://bsmedia.business-standard.com/_media/bs/img/topic-profile/profile-images/thumb/830_830/1559205337.jpg"  width="680" height="483" align="right">
+	<p style="text-align: left;font-size: 25px;">Mitchell Starc  a name that strikes fear into the hearts of contemporary batsmen. It is hard to fathom that the tall, skinny lad from Sydney, who was once an aspiring wicketkeeper in junior cricket, would one day become the most menacing sight for the world's best batsmen.
+
+Legend has it, that a tall, lanky 14 year old was spotted by a club coach trying out as a wicketkeeper for the Western Suburbs. He pulled the young man aside and demanded that he ditch the wicketkeeping mitts and that he would teach him how to bowl. The AFL's fabled method of scouting a body-type and building a particular skill around it seemed to be at work again, as it tends to work in favour of the player's ability and aptitude.
+
+It is a tried and tested method. Case in point: three decades ago, Dennis Lillee, then in charge of the MRF pace foundation, told a 14-year-old Indian boy of short stature that he couldn't be a fast bowler. Following the incident, the aspiring fast bowler, changed lanes and took up batting. We all know how that turned out...
+
+Starc, the teenager, seemed to have grasped fast-bowling quite quickly, picking up the fundamentals from the aforementioned coach, Neil D'Costa, and bowling at 135km/h by the time he was 16. In addition to athletic ability, he was said to have great discipline and an undying thirst for knowledge. Most crucially, however, he was a great listener, according to D'Costa. Soon after, he was selected for the New South Wales U-17s, and continued to rise through the ranks.
+
+After impressive performances in junior cricket, he was finally handed a Sheffield Shield debut for the New South Wales at the age of 19, and managed just 2 wickets in the match. In the following Shield season, he took 21 wickets in 8 matches including an impressive 5 for 74 against Queensland. The first run of consistent performances by Starc came in the domestic one-day tournament when he took 26 wickets in 6 matches at an average of 8.12, striking once every 12 balls. Starc was named the player of the tournament, as the young prodigy catapulted his team to victory. This proved to be the turning point in his career and finally propelled him into the limelight for national selection.
+
+At 20, Starc was named in the squad as a backup quick bowler for the short Test series in India, late in 2010. Unfortunately, he didn't get his hands on the coveted Baggy Green during that tour, as the Aussies already had a left-arm pacer (Mitchell Johnson) in their playing XI. Right-arm bowler Peter George was given preference over him in the second Test, and Starc had to be content with warming the bench and bowling in the nets.
+
+Owing to a plethora of injuries in the team and stellar domestic performances, he finally received the Baggy Green, playing New Zealand at the Gabba in late 2011. His debut Test was largely underwhelming, as he leaked runs at an alarming rate and took only 2 wickets in the match. He took 2 further wickets in the succeeding Hobart Test and didn't impress much with his control, clocking in the higher 130s, struggling to swing the Kookaburra, and most importantly, lacking intensity. He continued to get limited chances, as he was dropped from the squad for the first two home Tests against India, but got his opportunity in the third Test on a hostile Perth wicket. He fared much better on this tour, showing better control and the ability to move the ball both ways in the air. Most notably, he had the great Sachin Tendular playing down the wrong line and got him out LBW.
+
+However, he still hadn't performed well enough to cement his spot in the side, given the fiercely competitive assembly of fast-bowlers in the Australian circuit. To sharpen his skills and increase his versatility, he needed to travel and acclimatize himself to different conditions. He went to England and had a stint in county cricket with Yorkshire to learn the nuances and finer points of swinging the Dukes ball.
+
+There was something that he did right in England. Because the man who returned was Mitchell Starc 2.0.
+
+Upon return to international cricket, he notched up three 5-wicket hauls in quick succession against the West Indies and Pakistan in early 2014, thereby cementing his spot in ODI side. This ensured that he got more backing with the red cherry as well, but things weren't quite as smooth-sailing in Tests, especially because he was hit by a string of injuries during the 2013/14 season. To make things worse, Starc went wicketless in 4 out of 10 Test innings leading upto 2nd innings of the Brisbane Test against India in December 2014.
+
+After another wicketless performance, which was becoming the talk of the town amongst the critics, Shane Warne publicly made a statement urging Starc 'to change his body-language' and that he seemed 'too soft'. This could've been meant as constructive criticism or a spiteful comment. He also had the looming prospect of the upcoming World Cup in mind.
+
+Something had lit a fire under him.</p>

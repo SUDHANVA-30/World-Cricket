@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Bowlers Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">ODI-BOWLERS RANKING</header>
+		<div class="navbar">
+			<a href="worldcric.php ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<table>
+		<tr>
+			<th>Rank</th>
+			<th>Player</th>
+			<th>Country</th>
+			<th>Matches</th>
+			<th>Wickets</th>
+			<th>Economy</th>
+			<th>Best</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><a style="text-decoration: none;" href="trent_boult.html">TRENT BOULT</a></td>
+			<td>NEW ZEALAND</td>
+			<td>90</td>
+			<td>164</td>
+			<td>5.03</td>
+			<td>7/34</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td><a style="text-decoration: none;" href="mujeeb.html">MUJEEB UR RAHMAN</a></td>
+			<td>AFGHANISTAN</td>
+			<td>39</td>
+			<td>63</td>
+			<td>3.94</td>
+			<td>5/50</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><a style="text-decoration: none;" href="jasprit bumrah.html">JASPRIT BUMRAH</a></td>
+			<td>INDIA</td>
+			<td>67</td>
+			<td>108</td>
+			<td>4.66</td>
+			<td>5/27</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td><a style="text-decoration: none;" href="chris_woakes.html">CHRIS WOAKES</a></td>
+			<td>ENGLAND</td>
+			<td>100</td>
+			<td>149</td>
+			<td>5.54</td>
+			<td>6/45</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td><a style="text-decoration: none;" href="kagiso_rabada.html">KAGISO RABADA</a></td>
+			<td>SOUTH AFRICA</td>
+			<td>73</td>
+			<td>117</td>
+			<td>5</td>
+			<td>6/16</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td><a style="text-decoration: none;" href="josh_hazlewood.html">JOSH HAZLEWOOD</a></td>
+			<td>AUSTRALIA</td>
+			<td>53</td>
+			<td>88</td>
+			<td>4.79</td>
+			<td>6/52</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td><a style="text-decoration: none;" href="mohd_amir.html">MOHAMMAD AMIR</a></td>
+			<td>PAKISTAN</td>
+			<td>60</td>
+			<td>81</td>
+			<td>4.78</td>
+			<td>5/30</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td><a style="text-decoration: none;" href="pat_cummins.html">PAT CUMMINS</a></td>
+			<td>AUSTRALIA</td>
+			<td>69</td>
+			<td>111</td>
+			<td>5.25</td>
+			<td>5/70</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td><a style="text-decoration: none;" href="matt_henry.html">MATT HENRY</a></td>
+			<td>NEW ZEALAND</td>
+			<td>50</td>
+			<td>92</td>
+			<td>5.41</td>
+			<td>5/30</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td><a style="text-decoration: none;" href="jofra_archer.html">JOFRA ARCHER</a></td>
+			<td>ENGLAND</td>
+			<td>17</td>
+			<td>30</td>
+			<td>4.74</td>
+			<td>3/27</td>
+		</tr>
+	</table>
+
+</body>
+</html>

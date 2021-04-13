@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+	<header style="color: white;">QUINTON DE COCK</header>
+	<div class="navbar">
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>	
+		</script>
+		<body>
+			<img src="https://resources.pulse.icc-cricket.com/ICC/photo/2019/09/18/4eb4917d-bb9e-444f-b217-a027a5501dd1/Quinton-de-Kock-3-.jpg" width="680" height="483" align="right">
+			<p style="text-align: left; font-size: 25px;">Every once in a while, usually a very long while, there comes a player who manages to capture your imagination. Quinton de Kock is one such talent from South Africa. Some of the feats which he has accomplished at his age are unfathomable and it's easy to see why he is already being heralded as a future great. Not only is de Kock one heck of a batsman, but the value he brings to the side by donning the gloves is tremendous.
+
+De Kock went to King Edward VII High School, the same school which Graeme Smith and Neil McKenzie attended. He rose to prominence as part of the South Africa U-19 side and ended up as his team's highest run-scorer during the 2012 World Cup in Australia. Later that year, playing for the Lions in the Champions League T20, de Kock caught the eye of a larger audience with a sparkling knock to help his team over the line against Mumbai Indians.
+
+It paved the way for him to make it to the national team in a T20I series against New Zealand two months later, as AB de Villiers wanted a break. However, international success didn't come early for de Kock. It was only a year later, when he scored those three successive ODI hundreds against India, that people started taking notice of his humongous talent.
+
+He was pretty much in and out of the side for the rest of the year until he came up against once more and solidified his position with a couple of hundreds in a five-match ODI series.
+
+At this point, it had been a little under two years of de Kock making his Test debut. He never really made the spot his own. Despite the ODI success in India, Dane Vilas was chosen over him to be the wicketkeeper in the following Test series. However, it was the year 2016 which de Kock truly made his own and produced performances which would go on to evoke comparisons with a legend like Adam Gilchrist.
+
+Hitting a purple patch during the middle of the year, de Kock became the fifth South African to score five fifty-plus scores in a row, a streak which culminated with a match-winning hundred against Australia at Hobart which sealed the series for the visitors. De Kock's style of play in the previous Test at Perth, where he made counter-attacking fifties, followed by Hobart, revived great memories of their own legendary wicketkeeper batsman for many Australian supporters.</p>

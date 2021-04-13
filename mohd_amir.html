@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Bowlers Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">MOHAMMAD AMIR</header>
+		<div class="navbar">
+			<a href="world_cricket2.html ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+		<img src="https://english.cdn.zeenews.com/sites/default/files/2020/07/21/873797-amir-use.jpg" width="680" height="453" align="right">
+		<p style="text-align: left;font-size: 25px;">Prodigy turned offender - words that were associated with Amir after he was banned by the ICC for five years in 2010. He divides the opinions in the cricketing world like few have in the history of the game. Upon his comeback, a lot of hullabaloo occurred in the cricketing circles. From etching his name on the Lords Honour board to being a prisoner at Dorset, the sojourn has been nothing less than a fairy-tale turning into an ugly unprecedented nightmare. On his best days, Amir could nick off Sachin Tendulkar with his nagging outswingers and on his worst, like the one at Lords, he bowled an enormous no-ball to take his career into a dungeon. But life did give him a second chance and in January 2016, Amir came back for the tour to New Zealand.
+
+Amir was spotted as a prospect by Akram in 2007 and he remarked that Amir was a much clever bowler than he was at the age of 18. His first major achievement was during Pakistan's U-19 tour to England where he picked up eight wickets at an average of 16.37. In the tri-nation tournament in Sri Lanka featuring the England U-19 and Sri Lanka U-19, he snapped up nine wickets at an average of 11.2 to establish himself as a name to be reckoned with. In his first full year in Pakistan's domestic cricket in 2009, he picked up 55 wickets for National Bank of Pakistan and that earned him a call to the Pakistan team for the 2009 T20 World Cup in England. His pace and accuracy were key to the team's fortunes as they won the T20 World Cup.
+
+Amir made a good start to his ODI career as well and possessed a solid technique with the bat lower down the order. In the ODI against New Zealand at Abu Dhabi, he created history when he achieved the then highest score for a No.10 batsman in an ODI. His 103 run stand with Saeed Ajmal was only the second occasion when the last wicket pair had strung a partnership for the last wicket but it was not enough as Pakistan fell short by seven runs.
+
+He had an insipid start to his Test career as he picked up only six wickets in the three Tests against Sri Lanka. However, on the tours to Australia and England, he excelled. Against Australia at the MCG, he picked up his first five wicket haul while his haul of 5/52 against England at the Oval in 2010 gave Pakistan victory after nine years in England. He etched his name on the Lords Honours Board when he picked up 6/84 in the fourth Test, but it was the beginning of a painful period in Amir's life.
+
+In an investigation by the News of the World tabloid, it was revealed that Amir, along with his team-mate, Mohammad Asif, deliberately bowled no-balls in the Lords Test in return for a payment from a betting syndicate. This resulted in Amir being banned by the ICC under the provisions of their Anti-Corruption Code. In February 2011, Amir was handed a five year ban and decided to appeal the decision at the Court of Arbitration for Sports (CAS) in Switzerland. In November 2011, Amir was convicted at Southwark Crown Court for conspiracy to cheat at gambling and conspiracy to accept corrupt payments. Amir was sentenced to six months in a Young Offenders Institution in Feltham, after which he was transferred to a Young Offenders Institution in Dorset. He was released in early 2012.
+
+Ever since his return to the side, Amir has had to deal with constant comparisons of his younger self and that he has lost out on a lot of the steam that once turned the heat on the batsmen to make them sweat. But the Indo-Pak Asia cup game in 2016 was a silent reminder to his critics and fans alike, he can be as devastating when he is in the zone. The inswinging curler, the slanting away swinger, the deadly yorker are a few of the weapons in his repertoire that can befuddle any batting line up. He might never scale the peaks that he once attained but if he does, Pakistan's surge back to the top in every format is just a formality. The good-turned-bad boy in the minds of the public can force another u-turn if his ball does the talking.</p>
+	</body>

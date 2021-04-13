@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">MUJEEB UR RAHMAN</header>
+		<div class="navbar">
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+		<img src="https://cdn.images.express.co.uk/img/dynamic/68/590x/Mujeeb-Ur-Rahman-943026.jpg" width="680" height="453" align="right">
+		<p style="text-align: left;font-size: 25px;">Unlike the stereotypical Afghan success story involving war-stricken and plagued backgrounds, Mujeeb Zadran's is the trend-breaker. Having grown up in a mansion in Khost, Mujeeb developed a keen interest in cricket while watching the 2012 World T20.
+
+Blessed with his own private practicing facilities, Mujeeb discovered his aptitude for spin bowling trying to squeeze a tennis ball between his fingers to bowl off-breaks and carom balls. Over time, Mujeeb started to develop some strength and could propel the ball further with a flick of the finger. The millennial spinner was also helped by Youtube videos of Ajantha Mendis and started to attend his first cousin's (Noor Ali Zadran) cricket academy to hone his skills.
+
+WIth a plethora of difficult-to-decipher variations, he rose through the ranks to represent Afghanistan at the highest level at the tender age of 16. As Rashid Khan's apprentice in the team, the hype around him has been handled rather well by the teenager and has been backed up by some spell-binding performances by the prodigy.
+
+Mujeeb played a vital role in thrashing Bangladesh 3-1 in their own backyard, in one of his first international assignments. His peak in youth cricket came during a spell of 7/19, defending a paltry total of 133 and exhibited his ability to perform in pressure situations. Mujeeb ended the landmark series picking up a record 17 wickets in the tournament, and this was just the beginning.
+
+An Asia Cup performance that included 20 wickets in 5 games, including game-changing performances in the semi-final and final signaled his arrival in international cricket. A ravaging performance against Ireland in the ODI series in December 2017, and some brilliant performances in the U-19 World Cup, including a 4-for to knock out hosts New Zealand in the quarter-final. Moreover, with Afghanistan being awarded Test status, this is the perfect platform for Mujeeb to etch his name in history as one of the first greats for Afghanistan as a full member.
+
+IPL - Through the years
+
+He may have been a 17-year-old with a four-crore INR deal, from a war-torn nation which had thus far produced only two IPL players, but Mujeeb was clearly unfazed by the enormity of what he'd achieved. KXIP's think-tank too seemed to have placed a lot of trust in the youngster in 2018, who despite the presence of several international stars, made it to the first eleven, thus becoming the youngest ever to play in the IPL, and played a crucial role in his side's victories in the first half of the season. This included bamboozling many a batsman, including Virat Kohli, and he was more than happy to bowl the tough overs in the match, towards the death and in the powerplay.
+
+What to expect in the 2019 WC?
+
+Ajantha Mendis might not be a household name anymore but the species made famous by him still find habitats to survive. Mujeeb belongs to the 'mystery' spinner species. His strength is his nagging accuracy and of course the judicious use of carrom ball. Wrist spinners are in fashion these days in limited overs but this man despite being a finger spinner has it in him to have a dream run at the WC.
+
+Like most of the games he has played on, Mujeeb in all likelihood will open the bowling attack. If he can put the batters on a tight leash, Afghanistan for sure can strike the right chords through out the tournament. Mysteries can be solved but this one is here to stay for a long time. And expect Afghanistan to piggy back on this lad as the tournament progresses.</p>
+	</body>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+	<header style="color: white;">KANE WILLIAMSON</header>
+	<div class="navbar">
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>	
+		</script>
+		<body>
+			<img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2019/7/11/w900X450/williamson.jpg" width="680" height="483" align="right">
+			<p style="text-align: left; font-size: 25px;">Arguably New Zealand's finest batsman since the legendary Martin Crowe, Kane Williamson had been a wonder kid since his teenage days. His exceptional talent included the rare Non-Asian skill to play quality spin apart from being adept against fast bowling. It would be fair to say the Williamson family boasted of sports freak all around. While his father had played cricket at certain age groups, his mother was a fine basketball player and his sisters excelled in volleyball. It was therefore not a surprise when Kane took a liking to sports and it happened to be cricket.
+
+Since his Under-19 days, it was expected that Williamson would one day become the backbone of New Zealand's batting apart from being their captain. His leaderships skills were in abundance, just like his batting. Along expected lines, the year 2010 saw Williamson donning the Kiwi colors, making his international debut in Sri Lanka for the tri-series that also featured India. His white-ball cricket started in tragedy with ducks in his first two innings but his class couldn't be hidden for long as he stroked a ton against Bangladesh in Dhaka later that year. The Test call up came and it was for a challenging trip to India but Williamson made a massive statement but racking up a century on debut.
+
+The following years saw Williamson scoring runs albeit not at the highly consistent levels that one expected from him. That changed in 2014 though during ODI home series against India when he also broke a heap of records. With fifty plus scores in all five games, he became only the second batsman in ODI history (after Yasir Hameed) to achieve this feat. He also became the fourth New Zealand player to hit five or more consecutive fifty plus scores in ODIs. His five fifty plus scores are also the most by a NZ batsman in a bilateral series.
+
+If 2014 was a superb year for Williamson, it was 2015 that put him officially into the big league of batsmen. He notched up 1172 runs in Tests at a staggering average of 90 apart from amassing a gargantuan 1376 runs in ODIs at a strong average of 57. More than the numbers, it was the effortless ease with which he handled bowling attacks that impressed everybody. 2015 was also a historic year for New Zealand as they made their first ever World Cup final appearance.
+
+Being a regular player and having leadership skills at his disposal, it was only a matter of time before Williamson was appointed New Zealand's captain across formats. It happened in early 2016 after Brendon McCullum announced retirement from all forms of international cricket, just before the World T20 in India. It was a huge role but Williamson took to it fairly well, much like people had expected him to. Still a long way to go as captain in terms of success but the one thing that stands out about his leadership skills is his ability to be tactically street-smart.
+
+Williamson's batting is a purists delight - what with his classy strokeplay blending nicely with his footwork and gritty temperament. The only slight flaw that can be mentioned about his batting could be his relative inability to score quickly at will. You could argue that his role is that of a sheet anchor around which the other Kiwi batsmen revel. However, if he can raise his white-ball skills a notch upward, he could be a real phenomenon in world cricket. This is not to suggest that he hasn't produced impact knocks in the shorter formats. There have been quite a few knocks in that regard and he had shown in the 2017 IPL that he can adapt to that role easily.
+
+IPL through the years
+
+Kane Williamson, who is often referred to as a classical Test batsman, was first signed by an IPL franchise in 2015. The Sunrisers Hyderabad had him in their kitty for less than $100,000, and in the first season, he didn't return the dividends - particularly given the limited opportunities he had in an unfamiliar lower-middle order position. Williamson was a part of the side when the franchise coasted to their maiden title under the captaincy of David Warner in 2016, and was retained once again for the 2017 season (for $460,500), as the franchise showed trust in him and his ability to be the rock in the batting order around which the innings could be built. After the 2018 auction, however, David Warner was banned from the 2018 season of the IPL and was stripped from the captaincy, and the franchise handed Williamson the reins for the 2018 season. Against all odds, the Kiwi skipper exhibited a different dimension in his batting, hammering 735 runs at 52.50 and a strike-rate of 142.44. Moreover, he also led his side into the final, only to be defeated a second time by the Chennai Super Kings in the play-offs. With Warner out of contention for any leadership role, Williamson is likely to continue with the role in the 2019 season and certainly remains a vital cog in the batting order of the Sunrisers Hyderabad.</p>
+</body>

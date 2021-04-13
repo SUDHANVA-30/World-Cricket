@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+	<header style="color: white;">FRANCOIS DU PLESSIS</header>
+	<div class="navbar">
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>	
+		</script>
+		<body>
+		<img src="https://timesofindia.indiatimes.com/photo/69268945.cms" width="680" height="483" align="right">
+			<p style="text-align: left;font-size: 25px;">Francois du Plessis, fondly known as Faf, is South Africa's captain cool that might never have been. Having signed a Kolpak deal with Lancashire, Faf had initially decided to go the way of professional cricket. However, as fate would have it, the implementation of a new immigration policy resulted in du Plessis being unable to fulfill his duties as a Kolpak player.
+
+Upon his return to the South African fold, he had a prolific season in 2010 for the Titans (567 runs in 10 matches) in the MTN Pro40 competition, including three centuries in as many matches as he started to knock on the doors of the national selectors.
+
+Du Plessis's calm and composed approach at the center ensured that he was a perfect fit for international cricket - especially in a side that has had the 'ch**ers' label sticking to them since before one can remember. An orthodox, all-conditions technique and a dogged approach at the crease makes him an asset in the age of T20 cricket. Moreover, his ability to strike it big is a testament to the versatility of the man. After marking his ODI debut against India with a composed 50 in January 2011, he continued his good form in the World Cup, notably steering his side to victory in a high-pressure run-chase against eventual World Champions, India.
+
+After a long wait for the coveted Test cap, du Plessis was finally awarded a place in the side on the tour to Australia. And then it happened. The career-defining knock. In Adelaide, under immense pressure in the world's toughest backyard, du Plessis showed immense grit and antiquated resolve with AB de Villiers to snatch a thrilling draw on the final day, indirectly leading them to a phenomenal series win and handing South Africa the ICC Test Championship mace.
+Thereafter, du Plessis continued to be an immovable figure in the South African line-up: one of the big three (Amla, de Villiers, and Faf) most coveted wickets for the opposition. He led by example in the shortest format too (although silverware continued to elude them) with a semifinal finish in the 2014 edition of World T20 and a superb 2015 World Cup campaign which famously ended in heart-break for the South Africans. Nevertheless, barring the ICC tournaments and the India tour of 2015, South Africa continued to do well across formats; especially abroad, in an age of fortress domination.
+
+After a form slump in Tests, du Plessis was dropped for the start of the England series in 2016, as his school-friend AB de Villiers took over captaincy from Hashim Amla. However, citing injury and workload issues, de Villiers stepped down from his role in December. du Plessis, long believed to be the natural successor for the job, had found his run-scoring mojo and was filling in as deputy skipper. He even led South Africa to a famous Test series win in November against Australia in their own backyard and was named permanent Test captain of South Africa with immediate effect.
+
+With AB de Villiers stepping down half-way through 2017 as ODI captain, following a disastrous Champions Trophy campaign, Faf du Plessis was appointed the captain of South Africa across formats.</p>
+		</body>

@@ -1,0 +1,167 @@
+<?php
+	require 'dbconfig/register_new.php';
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WORLD CRICKET</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.myform{
+			width: 450px;
+			margin: 0 auto;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		#signupbtn{
+			background-color: #39FF14;
+			padding: 5px;
+			padding-top: 5p
+			color: white;
+			width: 25%;
+			font-size: 18px;
+			text-align: center;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+		#register{
+			background-color: #3498db;
+			padding: 5px;
+			padding-top: 5p
+			color: white;
+			width: 25%;
+			font-size: 18px;
+			text-align: center;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+		.avatar{
+			width: 100px;
+			text-align: center;
+			border-radius: 50%;
+			padding:50px;
+			width: 150px;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		#back{
+			background-color: #3498db;
+			padding: 5px;
+			padding-top: 5p
+			color: white;
+			width: 15%;
+			font-size: 18px;
+			text-align: center;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;text-align: center;">WORLD CRICKET</header>
+		<div style="font-size: 25px;text-align: center;padding-top: 15px;">Login to continue
+		<center><img  src="https://m.hindustantimes.com/rf/image_size_640x362/HT/p2/2016/07/09/Pictures/_9602fe7e-4594-11e6-80db-dfffb1de8362.jpg"  class="avatar"></center>
+		<form class="myform" action="register.html"><label>	Username:</label>
+			<input name="username" 	type="text" placeholder="Type Your Username">
+			<br><label>	Password:</label>
+			<input name="password" 	type="password" placeholder="Type Your Password" >
+		<br><label>Confirm Password:</label>
+			<input name="cpassword" 	type="password" placeholder="Confirm Password" ></form>
+			<input name="submit_btn" 	type="submit" id="signupbtn" value="Sign Up"><br>
+			<input type="button" id="back" value="Back">
+		</div>
+		

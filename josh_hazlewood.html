@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		body{
+			background-color: #000000;
+			color: white;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			background-color: #000000;
+			color: white;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+	<header style="color: white">JOSH HAZLEWOOD</header>
+	<div class="navbar">
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>	
+		</script>
+		<body>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/2018.01.21.17.06.41-Hazelwood_%2839139885264%29.jpg" width="680" height="453" align="right">
+			<p style="font-size: 25px; ">It won't be wrong to define Josh Hazlewood as the modern day adaptation of the legendary Glenn McGrath. The similarity isn't hard to make out - smooth run up to the crease with the intention being accuracy more than raw pace. The agenda would more often than not be an unerring fourth or fifth stump line with a bit of swing or seam to boot. Almost the classical fast bowler. Although not in the league of McGrath yet, there is no doubt that Hazlewood would be among the best pacers to have graced the game by the time he hangs up his boots.
+
+Such was Hazlewood's talent from his early years that he landed a First-class debut at the age of 17 in the 2008-09 season, making him the youngest fast bowler ever to play for New South Wales. Gradually, he got initiated into the other formats in the domestic circuit and also got a surprise ODI debut in 2010 although it took another three years for him to play another 50-over game. Being young and raw,
+Hazlewood clearly was a work in progress but the selectors were keeping an eye on him. A strong 2013-14 home season saw him come of age and it was only a matter of time before he took international cricket by storm.
+
+Hazlewood debuted in Tests during the 2014-15 home series against India and started with a bang, a fifer on debut at the Gabba. It was a trailer of what was to come as he climbed up the ladder steadily to become one half of Australia's lethal new-ball attack along with Mitchell Starc. If his partner was a devastating left-arm pacer who relied a lot on speed through the air, Hazlewood's mantra was to stick to the basics of line and length. The policy worked for him and complemented Starc beautifully too.
+
+With Starc being injury prone, Hazlewood has had to shoulder a lot of extra responsibility at times and he has shown that he relishes the baggage. While he has shown his skills at home and also overseas on seamer-friendly conditions, Hazlewood has also bowled with a lot of heart in the sub-continent, making ample use of reverse swing along with his accuracy to trouble batsmen. The 2015 Ashes series was an aberration for him as he couldn't quite make use of pitches that had movement in them. Having said that, the first tour of England for any visiting fast bowler is a challenge and to be fair to Hazlewood, he was still a rookie in international cricket.</p>
+		</body>

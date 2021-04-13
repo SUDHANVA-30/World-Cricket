@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>World_Cricket</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.C1{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		.logout{
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 20px;
+			background-color:red;
+			padding: 5px;
+			color: white;
+			width: 8%;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.book_tickets{
+				background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		
+		}
+		
+	</style>
+</head>
+<body>
+	<section>
+		<div class="C1" style="color: white;">RAVINDRA JADEJA<ins style="margin: right; text-decoration: none;font-size: 20px; font-family: verdana;"></ins> </div>
+	<div class="navbar">
+	
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html" >ODI</a>
+				<a href="bowlers_ranking_test.html" >TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="domestic_league.html">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+</div>
+<body>
+<img src="https://cdn.dnaindia.com/sites/default/files/2019/07/08/846150-ravindra-jadeja-afp.jpg" width="680" height="483" align="right">
+<p style="text-align: left;font-size: 25px;">Very few careers in international cricket have transcended the boundaries of myth as that of Ravindra Jadeja, nicknamed 'Sir'. The nickname initially trended more as a joke but the young man from Saurashtra took all the criticism and mock comments in his stride to turn the tables in spectacular fashion. A disastrous 2009 World T20 made him the laughing stock, particularly among the naturally combustible Indian fans who were baying for his blood back home. The 2009-10 season went haywire for the young man whose only solace was the immense backing from his skipper MS Dhoni who was adamant in his support of the all-rounder.
+
+A few quiet seasons followed and Jadeja unassumingly pegged away at the domestic circuit. Although known as a proper all-rounder there , it was evident that he was a more effective bowler, having the ability to hit a spot with relentless accuracy. Batting skills were no less - he has three triple tons in first-class cricket - that sums things, doesn't it? Jadeja was slowly working his way in limited-overs cricket but clearly, it was his Test debut that changed his fortunes in a big way. His initiation in red-ball cricket came in a dead rubber of the home series against England in 2012-13. However, a fairly decent debut meant that he was retained when the Australians toured India in early 2013. Jadeja starred in that series along with the lead spinner Ravichandran Ashwin as India recorded a historic whitewash over the Aussies.
+
+The same year he shone in India's Champions Trophy title glory, gaining the Golden Ball for his terrific bowling performances in the tournament. That international season was an emphatic statement - Jadeja had arrived. Since then, he hasn't looked back, becoming a force to reckon with in Tests, particularly in the sub-continent as India charged to number one in the rankings. His association with Ashwin has dismantled many opposition batting line-ups and is easily the best spin attack in the world. Injuries did hamper his form in the shorter formats and the new rule changes post the 2015 World Cup saw him being ineffective in white-ball cricket. Ashwin also struggled and the duo found themselves out of the limited-overs squads post the 2017 Champions Trophy.
+
+India did finish runners-up in the showpiece event but there was a feeling that the vaunted Test partnership of Ashwin-Jadeja wasn't being replicated in white-ball cricket. The advent of wrist spinners has made things tough although Jadeja's multi-dimensional skills does keep him in the hunt. He is arguably India's best fielder and can tonk a few with the bat apart from his bowling skills. Supreme fitness levels also meant he was always on the radar for national selection whenever there was an opportunity. He returned to the ODI setup for the 2018 Asia Cup and played a sizeable amount of games since then, although he was dropped for a few as well. The all-round package that he is, Jadeja is a tough candidate for a captain to ignore because he is a live wire in the field, bowls decent spin and can give those extra few runs towards the end overs. Recurring injuries to Hardik Pandya in the 2018-19 season gave a new lease of life to Jadeja's white-ball dreams and he cemented his spot in the squad, featuring at no.7 whenever Hardik missed out and taking one of the specialist spinner slots when the latter returned. Jadeja's batting in Tests has also hit a peak over the last few years, making him a very reliable batsman irrespective of conditions.
+
+IPL through the years
+
+Jadeja's rise does have a lot to do with Dhoni's undying support but it was actually the IPL that found the Saurashtra boy - or rather the legendary Shane Warne to be precise. As captain of the Rajasthan Royals, the Australian spotted Jadeja's prowess and had said back in 2008-09 that this 'Rockstar' would go places. He wasn't wrong at all. After featuring for Rajasthan briefly, Jadeja became an integral part of the Chennai outfit till the squad was briefly suspended after the 2015 season. During the side's two-year hiatus, its players were scattered across and Jadeja found himself with his native Gujarat franchise - a temporary side. With the Chennai squad returning from the 2018 season onwards, he was among the three people retained - proof enough of how much he is valued there.
+
+One of the main criticisms of Jadeja, the spinner, is that he often bowls darts than flighting the ball up and forcing a mistake from a batsman. Dhoni often chirping to him to bowl slower through the air is picked up by the stump mic and this means he is more of a defensive bowler than an attacking spinner who guarantees you wickets. This is precisely why we see him not employed to bowl by captains quite a few times on good batting surfaces. 2014 was the best year with the ball for him as he took 19 wickets to be second highest wicket-taker for the side.</p>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Bowlers Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">JOFRA ARCHER</header>
+		<div class="navbar">
+			<a href="world_cricket2.html ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+		<img src="https://c.ndtvimg.com/2020-05/5jcs4j2g_jofra-archer-afp_625x300_13_May_20.jpg" width="680" height="453" align="right">
+		<p style="font-size: 25px;text-align: left;">West Indies have in the recent past produced a flurry of aggressive all-rounders who can wield the willow like an axe and bowl fiery spells at a rapid pace. Jofra Archer is the latest sensation in that list although it's the Caribbean's loss that the youngster will not be representing his own country. This wasn't expected at all, considering that Archer showed a lot of promise during his growing stage in Barbados and even went on to represent the U-19 West Indies side. However, a relentless back injury hampered his progress in a big way and by the time he got back to peak fitness, it seemed like that the cricketing structure in West Indies had forgotten about him.
+
+Archer wasn't to be denied though and instead decided to ply his trade in England. His fellow West Indian-born English star Chris Jordan recommended the young man to his club Sussex and Archer impressed instantly. Consequently, a First-class debut followed and he also got picked in the shorter formats as well. He has looked at ease in all the formats, blessed with loads of natural ability. Despite his performances in England, it was the Big Bash League in Australia that catapulted Archer to global fame. Representing the Hobart Hurricanes in the 2017-18 season, he performed admirably. There was clinical ball-striking, there was genuine pace and craftiness apart from excellent fielding which is a given with most West Indian cricketers.
+
+Archer's heroics at the BBL ensured that he got noticed at the 2018 IPL auctions and was eventually snapped up by the Rajasthan Royals. He knows very well that the IPL is the grandest stage of them all as far as T20 Leagues go and if he can shine there, nothing like it. The only interesting thing is regarding his future in international cricket. Initially, to play for England, he needed to play there in domestic cricket for seven years and hence, could represent the country somewhere in 2022 or thereabouts. However, the ECB relaxed the rules on expats, mostly in a bid to get Archer into the mix for the World Cup. It meant that Archer was available for selection for the 2019 World Cup and the Ashes series that followed it.
+
+IPL through the years
+
+Archer made an impression instantly in his maiden IPL season, ending with a tally of 15 wickets. His economy was really good, considering that he bowled mostly in the slog overs. Apart from bowling the yorker at will, Archer can also bowl a heavy ball and is definitely one of the Royals’ main weapons in the 2019 season. His batting has been underused till date wherever he has played and it won’t be long before he shows the explosive side to his batting too because he is surely capable of doing that.
+
+Archer didn’t make the preliminary 15-member World Cup squad, he was the most talked-about player a month or two before the mega event. Returning from IPL, Archer made his ODI debut in May 2019 against Ireland and was also picked for England’s final series - against Pakistan - before the WC. With the England and Wales Cricket Board (ECB) relaxing qualification rules, it wasn't a surprise that Archer leapfrogged his fellow competitors to gain a berth in the 15-man England squad. It was a decision that turned around England's fortunes and helped them win the evasive trophy. Archer not only topped England's bowling charts with 20 wickets, but also bowled that final super over which tilted the game his team's way (by the barest of margins). He then went on to make a memorable Test debut at the Ashes, against arch-rivals, Australia and finished with 22 wickets from four Tests.
+</p>

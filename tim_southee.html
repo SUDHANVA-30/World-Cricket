@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">TIM SOUTHEE</header>
+		<div class="navbar">
+			<a href="worldcric.php">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+		<img src="https://t1.gstatic.com/images?q=tbn:ANd9GcRGHSnJLK2pSDtNx6psTz3AXKe3Z81P12Xx9N8HZZkPqJPGbKAscS5obKkQR7f4" width="680" height="483" align="right">
+			<p style="text-align: left;font-size: 25px;">The outswinger is the first thing that comes to mind when you think of Tim Southee. That has been the delivery which has caused most damage from him, although over the years, he has developed a vast repertoire of deliveries. Apart from a fine new-ball bowler, he has developed into a fine old-ball bowler too with the pace variations and reverse swing being his ally. Apart from being a very wily bowler, Southee has also shown on quite a few occasions that he can hit the long ball. Safe to say he has been one of the gems to have come out of New Zealand in this millennium.
+
+It was the 2008 Under-19 World Cup that shot Southee to fame. He ended as the Man of the Tournament and made everyone who watched him bowl to sit up and take notice. He was fasttracked into the New Zealand Test side and made his debut in the home series against England. A 5-fer and a sparkling 77 in the second innings is what he had to show, an emphatic statement that told the world that he had arrived on the big stage. In the return series in England, he also made his debut in the shorter formats and has been a regular member of the Kiwi line-up ever since.
+
+Most of New Zealand's key achievements after 2000 have seen a Southee stamp on it somehwere. Semifinal finish in the 2011 World Cup had him playing a major role as he scalpd 18 wickets at an excellent average of 17.33 - ample proof of his ability to adapt to sub-continental conditions. A rare Test win in Sri Lanka followed during the 2012-13 season and Southee was at the helm there as well with an excellent eight-wicket match haul. He was also on song during the 2015 World Cup where New Zealand made their first ever appearance in a final.
+
+Southee's key skill is his ability to read a surface quickly, thereby readjusting his pace, lengths and line with aplomb. The crafty nature of varying the pace is a skill he mastered over the years which helped him shine a lot in white-ball cricket. Since the arrival of the prodigious talent that is Trent Boult, he has formed a staggering new-ball partnership that can be counted among the best in the world. The duo feed off each other and have wrecked havoc in the opposition batting line-ups more often than not. Brendon McCullum's ultra-aggressive mode of captaincy that changed the cricketing fortunes of the Kiwis depended on a lot on the Southee-Boult partnership.
+
+Southee has played his part in quite a few T20 leagues across the globe, notably the IPL where he represented some big teams like Chennai Super Kings and Mumbai Indians. Injuries have plagued his career over the last few years which has had an impact on his white-ball career. The dip in pace hasn't helped either and also the fact that there are younger pacers waiting in the wings to take on the mantle. However, the reputation that he carries ensures that he still remains a vital name on the team sheet.
+
+The white-ball future could be a tad uncertain for Southee although it seems like he wants to carry on till the 2019 World Cup. He enjoyed a decent Champions Trophy 2017 in England although the Kiwis failed to make it to the knockout stages of the tournament. Though his white-ball fortunes have faded a bit in the recent past, Southee still has it in him to make an impact particularly with the new ball and in the slog overs of the innings. He is also the spearhead of the attack who mentors the other quicks around him with his experience that is invaluable.
+
+IPL through the years
+
+The New Zealand pacer had a start-stop beginning to his IPL career. He was picked for the 2011 season by Chennai Super Kings and though he won them their first game by defending 6 off the final over, Southee played only a couple more after that as Doug Bollinger replaced him. The championship winning team did not retain him and he was left in the wilderness for two years.
+
+Rajasthan Royals bought him back to the league in 2014 for INR 1.2 crore. He didn't play much because of Royals' strong foreign recruits. The same happened in 2015 and once Rajasthan were terminated, Southee moved to Mumbai Indians for the next two years.
+
+In the first season with Mumbai, Southee played 11 games and returned with 9 scalps for an average of 36. The second year he was overlooked for the likes Mitchell McClenaghan and Mitchell Johnson. In 2018, Royal Challengers Bangalore entered the fray for the Kiwi and picked him for his base price of 1 crore. He went on to become the main death bowler for RCB and that in return made them retain him.
+</p>

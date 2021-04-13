@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<header style="color: white;">EOIN MORGAN</header>
+		<div class="navbar">
+			<a href="worldcric.php">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+<img src="https://c.files.bbci.co.uk/B520/production/_107886364_morgan.jpg"width="680" height="483" align="right">
+<p style="text-align: left;font-size: 25px;">Eoin Joseph Gerard Morgan has represented both Ireland and England at the international level and has earned respect as an inventive and free-stroking middle-order batsman, especially in the shorter formats. If we trace back Morgan's early career, he was a key player in the Irish youth teams at the Under-17 and Under-19 level. At the age of 17, he was selected for the Under-19 World Cup to represent Ireland and he was the top-scorer for his team. Two years later, he was chosen as the captain of the Under-19 side, where he finished as the second highest run-getter of the tournament.
+
+Morgan made 99 on his ODI debut for Ireland against Scotland in August 2006 - the only player in the history of the game to have been dismissed for 99 on debut. 'Moggie', as he is nicknamed, then made his maiden ODI century against Canada on 4th February 2007 and became the youngest non-subcontinental player to score a century in ODIs. A 21-year-old Morgan was part of a spirited Ireland team in the 2007 World Cup, which progressed to the Super Eights. The southpaw, batting at three, didn’t have a great tournament as he managed to score only 91 runs in 9 innings.
+
+The southpaw earned his recognition in England when he represented the England Lions in a tour match against South Africa. He was a part of an unbeaten 113-run partnership with Samit Patel and helped the Lions secure a six-wicket victory. After his notable performances for the English Lions, Morgan was named in the 30-man squad for the ICC World T20. He then had to quit playing for Ireland as he was also chosen in the 15-man squad for the World T20 for England.
+
+Morgan's big break came during the Champions Trophy in South Africa in 2009, where Matt Prior was unavailable, thus paving the way for Morgan to keep wickets and bat for England. He scored back-to-back 60s against Sri Lanka and South Africa, particularly relishing the South African attack while making 67 off 34 balls.
+
+He made his Test debut against Bangladesh in May 2010 and scored 44 in the first innings. In the ODI series against Australia, later that year, Morgan scored an unbeaten 103 off just 85 balls in the first game, followed by a 50 in the second to win Player of the Series award. He further cemented his place in the English side with a breathtaking 45-ball 85 in a Twenty20 match against South Africa.
+
+Morgan was one of the better buys at the third IPL auction, with the Royal Challengers Bangalore snapping him up for his base price for USD 220,000, but his performance in that edition was modest. IPL 2011 proved to be a tad better for Morgan as he represent Kolkata, scoring 137 runs in nine innings.
+
+A successful domestic season saw him being selected for the Sri Lanka Test series. He scored 168 runs in four innings that included two half-centuries. Morgan also compiled 158 runs in the ODI series. Later that year, he was named as the England vice-captain for T20 side.
+
+During the 50-over World Cup held in the subcontinent in 2011, Morgan was called in as a replacement for Kevin Pietersen in the midst of the tournament. He became only the fourth player to have represented two different nations in Cricket World Cup. Morgan recorded two half-tons in three innings, but both those knocks came in losing cause.
+
+In the Test series against India in 2011, Morgan scored only 19 runs in the first three innings. However, he came back with a flourish as he scored a rapid half-century against a modest Indian bowling attack. In the third Test, he scored a brilliant hundred as England amassed more than 700 runs.
+
+After the India series, Cook was rested for a one off-ODI against Ireland and Morgan led the team to become only the third Irish player to lead England (The other two were Timothy O'Brien and Frederick Fane). What followed was the forgettable tour to UAE, where Morgan was able to score a mere 82 runs, averaging 13.66 in three Tests. He was later dropped for the two match Test series when the team toured Sri Lanka in March 2012. His journey after that was quite insignificant and thumb injury didn’t help his cause.
+
+However, he got back to form later in the year and delivered solid performances against Australia in the ODIs at home as well as Down Under. He was then named the vice-captain of the squad for the West Indies tour and the World T20 in 2014. Morgan was soon named the captain of England's ODI side, after Alastair Cook was axed, two months before the World Cup. In only his first ODI as permanent captain, Morgan scored a marvellous 121 against Australia.
+
+The 2015 World Cup humiliation is what inspired Morgan to lead an ODI renaissance, that saw England re-brand itself as New England. The captain's new-age methods found support from Andrew Strauss, who was made the Director of Cricket by the ECB, and together the pair worked diligently to rework the archaic methods that plagued England's ODI mindset for long. Flatter limited-overs pitches were encouraged, players were given more confidence to play freely and an IPL window was opened for the players to try and seek exposure of the big platform. And the transformation has been such that England changed drastically from a conservative limited-overs side to one of the most feared batting units in the world in white-ball cricket.
+
+The 2017 Champions Trophy had England starting as strong favorites due to their phenomenal transition as well as the fact that the tournament was being held at home. However, they were thwarted in the semifinals by a mercurial Pakistan side who were having a redemption of their own and eventually won the coveted trophy. Despite the blip, England continue to be a formidable limited-overs unit due to their fearless approach and enviable depth in the side. Morgan had a fairly good tournament personally as well as captain. His contribution as a skipper both in terms of tactics as well as backing his mates has been pivotal to England's progress. A dangerous middle order batsman on his day and a more than shrewd captain, Eoin is a vital cog of England's white-ball cricket fortunes.
+</p>

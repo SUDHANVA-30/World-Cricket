@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+	<header style="color: white;">BABAR AZAM</header>
+	<div class="navbar">
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+<body>
+	<img src="https://i.ytimg.com/vi/13r8V5AO5bc/maxresdefault.jpg" width="680" height="583" align="right">
+	<p style="text-align: left;font-size: 25px;">When Babar Azam notched up his 5th ODI ton against West Indies in his 25th innings in early 2017, he became the second quickest after Quinton De Kock to score five ODI tons. His aggregate of 1306 runs after 25 knocks tallied the highest, beating Jonathan Trott's numbers. Life indeed has been on fast tracks for Babar Azam. His three consecutive ODI tons against the Windies in 2016 in the UAE were a precursor to one glorious career that stares at us.
+
+Pakistan's search for a dependable number 3 in the shorter formats has been an eternal one. Their batting stocks at the international level, especially in the shorter formats have looked as bare as Old Mother Hubbard's cupboard. The arrival of Babar onto the big scene however can't exactly be termed as serendipity.
+
+Ever since he was drafted into the Pakistan under-19 team for the 2010 World Cup as a fifteen year old, it seemed as if another raw talent has been unleashed. However, some polishing resulted in another under-19 World Cup campaign in 2012. This time he was the skipper. Pakistan were knocked out by eventual winners India but Babar had piled the runs to be the top run getter for his team.
+
+The journey post that was through the domestic system and come his chance in 2016, Babar grabbed it with hands as big as tentacles against the Windies in the UAE. A Test debut against the caribbean team also went well and the fairytale had a continuity. But flaws were ripped open on the bouncy tracks of Australia in late 2016 and early 2017 in the whites. But given the fact that he wants to emaluate Virat Kohli' feats and idolizes ABD, Babar would carve a way out.
+
+Babar Azam is the cousin of Akmal (Kamran, Umar and Adnan) brothers and is often denoted as a talented opening batsman. He was the leading run-scorer in the tri-series that included Sri Lanka and Bangladesh Under - 19 in 2009. His consistency at Under - 19 level pushed the selectors to offer him a chance to play for his national side.
+
+He was named in the Pakistan squad for Zimbabwe series at home where he got a great chance to make a debut on his home soil. He scored a fluent fifty in his debut and has shown glimpses of great stroke making ability. Babar then retained his spot for the Sri Lanka tour in July where he could play only 2 ODIs of the five-match series (as of August 2015).
+
+Favourite cricketer - AB de Villiers.</p>
+</body>

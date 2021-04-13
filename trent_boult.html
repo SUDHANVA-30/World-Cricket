@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+	<header style="color: white;">TRENT BOULT</header>
+	<div class="navbar">
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>	
+		</script>
+		<body>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/2018.02.03.22.23.14-AUSvNZL_T20_AUS_innings%2C_SCG_%2839533156665%29.jpg/1200px-2018.02.03.22.23.14-AUSvNZL_T20_AUS_innings%2C_SCG_%2839533156665%29.jpg" width="680" height="453" align="right">
+			<p style="text-align: left;font-size: 25px;">Trent Boult, the left-handed swing bowler made his First-Class debut when he was picked for the New Zealand 'A' team for the tour of India in 2007. Later on, he was selected for the Under-19 World Cup in 2008. Boult was in and around the New Zealand team, but only made his Test debut in Hobart in December 2011.
+
+Boult's first Test wicket was Michael Hussey as he picked up four wickets in the match and helped New Zealand win a Test in Australia for the first time since 1985. He has had a fairly good start to his career as he has picked up wickets against England, West Indies, India and Sri Lanka. His moment of glory came in the second Test against West Indies at Basin Reserve, where he got his first 10-wicket haul. That performance also gave Boult his first Man of the Match award. He continued to have a great time in Test cricket as he picked up 10 wickets in the two games against India, which New Zealand won 1-0. On the basis of his fine performances in Tests, Boult was selected for the T20 World Cup in Bangladesh. The left-armer, grabbed the opportunity of playing in T20Is with both hands, and picked up four wickets in two matches.
+
+He was a regular member of the Test side and was always amongst the wickets. He bagged seven wickets in the first Test against Sri Lanka in Christchurch and helped New Zealand win the Test match. He made a comeback into the ODI side for the home series against South Africa in October 2014, but did not feature in the games against Pakistan in UAE. Due to his ability to swing the ball, both ways at pace, the selectors named him in the squad for the 2015 World Cup.
+
+Boult finished the joint-highest wicket-taker in the 2015 World Cup with 22 scalps, enhancing his reputation as one of world cricket's exciting new talents with the ball. His high point came in the group stage victory over Australia, where he demolished the eventual champions with 5 for 28.
+New Zealand's horses for courses approach in the World T20, which earned them a lot of accolades, meant that Boult didn't feature in the entire 2016 edition. But that's nothing to do with ability, something which is affirmed by his approx $600K IPL contract when Sunrisers Hyderabad signed him up in 2015. The left-armer still has plenty of years in the tank and keeps churning up the wickets.
+
+Unlike most bowlers, Boult has the ability to switch between the three formats effortlessly with minimum fuss. Injuries, rotation and conditions have combined to ensure that his career in the shortest format has been rather brief but Boult has always been a gun bowler for his side. Such has his been his rise across formats that there is a talk going around that Boult is slowly but steadily set to displace Southee as the spearhead of the Kiwi pace attack. 2017 was a wonderful year for Boult in white-ball cricket as he picked up multiple 6-fers including a 7-fer.
+</p>
+		</body>

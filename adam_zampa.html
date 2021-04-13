@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-BOWLERS RANKING</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">T20I-BOWLERS RANKING</header>
+		<div class="navbar">
+			<a href="worldcric.php ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+	<img src="https://m.media-amazon.com/images/M/MV5BMDBlOWVlZWMtOWI0MC00MmI0LWJlZTQtNTBkZmQxZTViZWNkXkEyXkFqcGdeQXVyOTAyMDgxODQ@._V1_.jpg" width="680" height="483" align="right">
+		<p style="text-align: left;font-size: 25px;">With his boy-ish looks and a similar action, a teen-aged Adam Zampa drew immediate comparisons with Shane Warne. With the old-school technique of tossing the ball above the eye-line and wily deception, Adam Zampa burst onto the scene when he represented Australia U-19 in their successful 2010 World Cup campaign, when scouts and experts recognized the rather familiar action.
+
+After being handed a state contract in 2012, Zampa made his first-class debut for the New South Wales in the 2012/13 Sheffield Shield. He moved to South Australia for the next season and has continued to perform admirably in the Sheffield Shield. After moving to South Australia, he interacted with Johan Botha, then captain of South Australia and trained a the Australian Center of Excellence before joining the squad for the summer.
+
+After making headlines with his hat-trick in the Matador BBQs One-Day Cup, Zampa was sought after by several T20 franchises and got a transfer to the Melbourne Stars for the 2014/15 season. Zampa continued to impress with his cunning bowling in the shorter formats, but did not deliver any performances of note in Shield cricket. However, his T20 numbers, especially in the BBL, where his overall economy rate stands at a scarcely believable 7.19 – essentially conceding a miserly 28 runs in a T20 match.
+
+He was selected into the Australian ODI and T20I squads and performed well enough to maintain his spot for the 2016 World T20 in India. Despite Australia's disappointing campaign, picking Zampa proved to be a good move as he ended the tournament as Australia's highest wicket-taker. The highlight of his bowling was, once again, his miserly economy rate, standing at 6.27 runs per over during the World T20.
+
+Zampa has continued to impress in other T20 leagues around the world, including the CPL and the Indian Premier League. The young leg-spinner seemed to have taken a liking to Indian conditions, extracting more turn on the dry pitches, as he notched up the second-best figures for any bowler in the 2016 edition of the Indian Premier League, when he claimed 6/19 against the Sunrisers Hyderabad (albeit in a losing cause). He impressed in the CPL as well, finishing with 15 wickets in the season.
+
+Zampa was a shock omission for the T20I series against Sri Lanka at home in early 2017, owing to captain Aaron Finch's 'horses for courses' strategy. Zampa publicly expressed his dejection as a 'kick in the guts' and returned in the 3rd T20I to win hand his team a consolation win delivered a man of the match performance with figures of 3/25.
+
+The wrist-spinner still struggles to stand out in first-class cricket, owing to the strong South Australian pace attack, which leaves Zampa as a bit of a side-show in Shield cricket. In the 2016/17 Sheffield Shield, he delivered his first note-worthy performance against Queensland, as he picked up a 10 wickets in the match on an Adelaide track conducive to spin bowling. He was touted by ex-Kiwi skipper to play in the Test series in India in early 2017, owing to his excellent white-ball record in the country and the higher degree of possible control with the SG ball. However, the selectors gave preference to finger-spinners Steve O'Keefe and Nathan Lyon, and Zampa was unable to earn a ticket to India.
+
+A cunning bowler with the ability to deceive batsmen in the air and off the pitch, Zampa's talent was never in doubt but for some reason, he never got the desired backing despite having a year like 2016 where he was the highest wicket-taker in ODIs. He waited patiently though and continued to work harder on improving his game and repertoire.
+
+The 2018-19 season saw a turnaround for Zampa who had a fine BBL to begin with but it was the white-ball tour of India in 2019 that cemented his spot in the national side. It seemed like he had finally got his act together and with the management also supporting him fully, Zampa started to turn in matchwinning spells that booked his ticket for the World Cup. A wrist spinner is always an asset to have and Zampa has a long future for Australia if he is backed well.
+</p>

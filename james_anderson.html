@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">JAMES ANDERSON</header>
+		<div class="navbar">
+			<a href="worldcric.php">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+	<img src="https://t3.gstatic.com/images?q=tbn:ANd9GcToMZV6gqk7M3BomWs7KCOYdgT_5cac2DvgAtusP3xN7ZyO_PRVuPsnQe2CalxQ"width="680" height="483" align="right">
+	<p style="text-align: left;font-size: 25px;">Born in Burnley, Lancashire, James Anderson is perhaps the best swing bowler in the world at the present moment. He made his England debut in the season of 2002 and for the best part of five years till late 2007 remained in and out of the side. He produced a sensational spell in the 2003 World Cup against Pakistan that heralded his arrival, but he couldn't maintain the momentum and drifted out of the side.
+
+During the early part of his career he was considered too soft and lacking the attributes of becoming a top-class performer at the international level. But since late 2007 he has been on another planet. With wickets coming against every side and after having mastered the Aussies in Australia his resume now looks complete.
+
+During those inconsistent years, when he was out of the side, the England coaching management tinkered with his bowling action which resulted in a loss of confidence and form. But once he went back to an action that was based on his old one, he was back to his best - swinging the ball around corners and taking wickets by the plenty. His stand-out performance came in the 2010 Ashes when he spearheaded the England attack and bowled quite outstandingly with the Kookaburra ball taking 24 wickets - thereby exorcising some of the ghosts of his previous visit to Australia in 2006 when he took only five wickets.
+
+With a classical side-on action, he generates natural outswing and with the old ball is capable of reverse swinging it. When he is on song and when the conditions suit his style, he is pretty much unplayable and has often produced balls that pitch on middle and leg and hit off-stump, leaving the batsmen bewildered.
+
+With the bat, he is quite a handy lower-order batsman and his biggest achievement so far has been going through 54 test innings without a duck - which is a World Record. For a fast bowler, he is a mighty good fielder and is quite an athlete. He moves quite swiftly in the field and possesses a safe pair of hands which has seen him field often at gully and backward point.
+
+
+Some interesting facts about Anderson: Continued alteration of hair styles, attractive looks, and up-to-the-minute outfits earned him comparisons with some of the most recognisable sport personalities around, including David Beckham.
+
+He is married to Daniella Lloyd an English model he met in 2004 and they are blessed with two daughters.
+
+Anderson became the first cricketer to model naked for Attitude, 'Britain's biggest-selling gay magazine', in September 2010.
+
+In June 2013 in the ICC Champions Trophy match against Australia, Anderson became England's leading ODI wicket-taker when he took his 235th wicket and went past Darren Gough. He also became England's second highest wicket-taker in Tests when he took his 326th wicket in the fifth Test against Australia at The Oval in August 2013.
+
+England pinned a lot of hopes of their spearhead Anderson for the 2013-14 Ashes series Down Under but unfortunately, the right-armer could not do much and his side eventually went on to lose the series 5-0. However, Anderson made up for the Ashes debacle with a superb 2014 home summer against Sri Lanka and India. The ace England fast bowler tried his best to save the Test series against Sri Lanka when he batted for 55 balls and was out off the penultimate ball of the game. He was adjudged England's Man of the Series. He then continued his fine form against India, though he was criticised for not capitalising on a green-top wicket at Lord's - a match which England lost, he came back well in the next three games and helped his side win the series 3-1, he was the leading wicket-taker with 25 wickets and he also won another Man of the Series award. In the series against India, Anderson was involved in a record last wicket partnership with Joe Root, the pair added 198 runs and bettered the previous record in Tests by 35 runs. He also registered the highest score for an England No. 11 when he went onto make 81.
+
+Anderson was ruled of the Sri Lanka tour with a knee injury. However, he made a comeback in the tri-series in Australia involving India as well. He will also lead the England attack in the 2015 World Cup campaign. On 8th September 2017, Anderson became the first England (6th overall) bowler to take 500 Test wickets. West Indies' Kraigg Brathwaite became his 500th victim during the second innings of the Lord's Test.</p>

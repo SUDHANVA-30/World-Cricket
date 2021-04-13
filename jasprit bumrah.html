@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Bowlers Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">JASPRIT BUMRAH</header>
+		<div class="navbar">
+			<a href="world_cricket2.html ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+		<img src="https://c.ndtvimg.com/2019-10/sdu2go38_jasprit-bumrah-twitter_625x300_09_October_19.jpg?q=60" width="680" height="453" align="right">
+		<p style="text-align: left;font-size: 25px;">In an Indian team desperately searching for a death overs' bowler, Jasprit Bumrah came to the fore through the Indian Premier League, as a boon for cricket in the country. The scantily-built pacer from Gujarat has managed to perfect the art of bowling inch-perfect yorkers as an understudy to Lasith Malinga as a part of the Mumbai Indians franchise and has grown into an indispensable asset for the Indian team in the limited-overs format.
+
+Having been a consistent performer in the domestic circuit, Bumrah has been a menace to the batsmen at the Ranji level since his debut. His quick-arm action has made his variations almost indiscernible - starting from his slower deliveries to his reverse-swinging yorkers at the death. An injury kept him out of action for a while in the 2014/15 seasons but he returned and continued to perform unaffected by the injury break. A national call-up seemed to be just around the corner.
+
+The inevitable call came at last as Bumrah travelled with the Indian team to Australia as an injury-replacement for Mohammad Shami, eventually making his debut in the dead rubber at the Sydney Cricket Ground. He has delivered consistent performances in coloured clothing and has since become an irreplaceable asset for his captain, consistently holding his nerve and becoming MS Dhoni's bowling counterpart as a last-over specialist for India. He went on to perform commendably for a young fast bowler in India's next world events - the ICC Champions' Trophy in 2017, where he only took 4 wickets in 5 matches, but conceded at an economy rate of just 5 runs an over, particularly impressive for a death overs' specialist.
+
+Only one question remained. Can Bumrah become an effective Test bowler? He has shown appetite and ability for red-ball cricket, bowling Gujarat to their maiden Ranji Trophy title, in 2016-17. However, the Kookaburra ball posed a whole new challenge. He was handed the elusive Test cap in January 2018 in South Africa, and showed his adaptability with his skiddy nippers and unpredictable scrambled-seamers, proving to be the find of the tour for India - in other words, a good start in Tests for the versatile Bumrah.
+
+In the season to follow, Bumrah's reputation would grow staggeringly as he would take Test cricket by storm in just his first year in whites. With sensational performances in England and Australia, he broke the record for the most wickets taken in overseas Tests by an Indian bowler in a single year.
+
+IPL through the years
+
+One of the many things the IPL can boast of is being a feeder system of emerging talent. It provides a platform for unheard players to make themselves known, to throw their hat in the ring as far as national reckoning goes. And no one exemplifies this better than Jasprit Bumrah, probably the IPL's biggest gift to Indian cricket.
+
+Bumrah built his reputation by being different. A short run-up followed by a snappy bowling action with his arms rigid as bones, where it seems like everything could go wrong, right up until the point when it doesn't. His reliability is what surprisingly started to stand out amid the mayhem of the IPL. Under the guidance of a death-bowling expert like Lasith Malinga, Bumrah flourished. He made his debut in the 2013 edition of the competition, where he barely got much game time, but would quickly go on to become a regular in the MI playing eleven in the seasons to follow, surprising batsmen with the pace he generated off his wrist.
+
+By 2017, he had established himself as the team's go-to bowler, even ahead of Malinga, evidenced by the decision to give him the responsibility of a Super Over against the Gujarat Lions, where he justified the call by defending 12 runs against Brendon McCullum and Aaron Finch. In that same year, Bumrah bowled MI into the finals through a match-winning spell of 3/7 in three overs in the second Qualifier against KKR, and then played a big part in clinching the trophy for Mumbai just when it seemed that Pune would cruise home.
+
+It came as no surprise that Bumrah was one of the three players to be retained by MI for 2018. And he repaid the faith by finishing the season as the team's top wicket-taker, with an economy of under 7 - the first time he'd done that.</p>
+	</body>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Bowlers Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">SHAKIB AL HASAN</header>
+		<div class="navbar">
+			<a href="world_cricket2.html ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+		<img src="https://resources.pulse.icc-cricket.com/ICC/photo/2019/07/07/df88ae9a-7a89-48e3-adf3-f641f160a14c/Shakib.jpg" width="680" height="453" align="right">
+		<p style="text-align: left;font-size: 25px;">Shakib Al Hasan is without a doubt the biggest name to have emerged from Bangladesh cricket circles. Being a genuine all-rounder, Shakib is a vital cog in Bangladesh's line-up. He has been a consistent performer for his country, over the years. Shakib first came into notice when he played cricket for several villages near his hometown of Magura. He spent time honing his skills at a government run sports facility and was picked for the Under-19 squad for the tri-series featuring England and Sri Lanka. He scored a 86-ball century and picked up three wickets in the final to help the team defeat Sri Lanka. This earned him selection for the series against Zimbabwe.
+
+He cracked his first ODI ton against Canada in the tri-series played in the West Indies, just before the 2007 World Cup. He scored a composed fifty and bowled 10 tight overs for 44 runs without a wicket as Bangladesh secured a big win over India. His consistent performances enhanced his reputation. He went on to score a century against Pakistan, later in the year.
+
+In the Test arena, Shakib continued in the same vein as he had done in the ODIs. His major breakthrough came in the Test against New Zealand in Chittagong in 2008. He picked up 7/36, which till date is the best figures by a Bangladeshi bowler. Shakib also contributed with a fifty in the second innings to set New Zealand a challenging 317. However, he got no support from the other bowlers and New Zealand won the match.
+
+Shakib was ranked No. 1 among the all-rounders by the ICC thanks to his consistency. He took over the captaincy from Mohammad Ashraful and led from the front. He picked up five wickets and went on to score an unbeaten 96 in the second Test in Grenada against a depleted West Indies side. Bangladesh eventually won the Test series 3-0.
+
+Shakib's stint with Worcestershire made him even better. He took 35 wickets in a single season, including his best figures of 7/32 against Middlesex to help the County get promoted to Division 1 of the championship. Along the way, he was the leading wicket-taker and run-scorer when Bangladesh achieved a whitewash over New Zealand in 2010.
+
+Despite leading Bangladesh to wins against England, Ireland and Netherlands in the 2011 World Cup, the team crashed out and many people blamed Shakib. He put aside all the criticism and performed well for Kolkata in the 2011 IPL.
+
+Shakib was sacked as captain before the tour of West Indies in 2011. However, he yet again proved his worth as he was Bangladesh's leading wicket-taker in both the ODI and Test series in the West Indies. His bowling was backed up by 168 runs he scored in two Tests. He scored 79 from two innings in the ODIs. Bangladesh lost both series. Later in the year, Shakib was Bangladesh's top run-scorer and wicket-taker in the home Test series against Pakistan in December 2011. In the second Test of the series, he became Bangladesh's first player to score a century and take five wickets in an innings. After the series, he was ranked No. 1 in the ICC's ranking of Test allrounders.
+
+The Bangladesh Cricket Board launched Bangladesh Premier League in 2012, a Twenty20 tournament to be held in February that year. The BCB made Shakib the 'Icon Player' for Khulna Royal Bengals. Under his captaincy, Shakib's team progressed to the semi-finals of the competition, where they were beaten by Dhaka Gladiators. In 10 matches, he scored 280 runs and took 15 wickets, and he was his team's leading wicket-taker and later he was named Man of the Tournament.
+
+In the 2012 Asia Cup, Shakib scored 237 runs, including three fifties and also took six wickets. Bangladesh progressed to the final of the tournament for the first time, where they lost to Pakistan by two runs. Shakib's performance earned him the Player of the Tournament award and he reclaimed the No.1 ODI allrounder spot from Australia's Shane Watson. Later that year in the 2012 edition of the IPL, Shakib played in eight of Kolkata's 18 matches and won two Man of the Match awards as the team won the IPL for the first time.
+</p>

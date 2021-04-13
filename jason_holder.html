@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">JASON HOLDER</header>
+		<div class="navbar">
+			<a href="worldcric.php">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+	<img src="https://p.imgci.com/db/PICTURES/CMS/208600/208681.5.jpg" width="680" height="483" align="right">
+	<p style="text-align: left;font-size: 25px;">Tall and lanky at 6' 7'', Jason Holder is the man chosen to lead Windies out of the never-ending mire. He's still at the helm, his latest task being that of securing his side a place in the 2019 World Cup, let alone do well in that.
+
+Holder won the prestigious Lord Gavron Award in 2009, which is given to a Barbados Under-19 cricketer who's been outstanding on the playing field. A right-arm medium-fast bowler hailing from Barbados, Holder has grown as learnt as a captain and player on the go, exhibiting an ever-improving temperament and progress in technical and tactical awareness. He is a also a handy batsman, lower down the order.
+
+Holder was a part of the 2010 Under-19 World Cup squad in New Zealand and was West Indies' leading wicket-taker with 13 wickets. Later in 2012, he was a part of the West Indies ODI squad for the Bangladesh tour, replacing an injured Tino Best. However, he made his international debut only a year later in 2013 against Australia. His exploits in the ODIs and T20Is impressed Chennai Super Kings, who signed him during the 2013 auction for his base price of USD 20,000. The following year, he was thrown into the auction pool, where Hyderabad purchased him for USD 125,000.
+
+Holder, whose USP is to hit the deck hard and extract extra bounce, then became a regular feature in the West Indian ODI attack. He made his Test debut against New Zealand in the third Test of the home series. Though he only managed to pick up two wickets, he contributed with the bat by scoring a fifty in a losing cause. He remained on the sidelines for the subsequent two-match series against Bangladesh.
+
+When the players backed out of the India tour in 2014, citing trouble with payment issues, the board axed Dwayne Bravo from the skipper's role and handed it to Holder. His first real assignment came in the away series against South Africa, where his captaincy came under scanner for allowing the hosts to put up 439 in the second game at Wanderers. Nonetheless, West Indies chief selector Clive Lloyd felt that Holder was the best man to lead the Caribbean side during the 2015 World Cup and he continues to do so.
+
+Although Holder copped severe criticism for his captaincy, the selectors continued to give him the confidence which worked wonders when the Windies toured England in 2017. Chasing a record 322 runs at Leeds, the Caribbean side surprised themselves with a stunning victory riding on significant contributions from Shai Hope and Kraigg Brathwaite. During the post-match presentations, Hope admitted that Holder reminded him of the feeling of claiming a hundred and cited that as one of the main reasons behind his dogged determination. That win at Leeds was also Windies first Test win in England in 17 years. The Windies eventually lost the series 2-1, but not before giving England a run for their money. Holder, the bowler, excelled leaps and bounds in that series which can be termed as the zenith of his captaincy career.</p>

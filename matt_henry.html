@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Bowlers Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">MATT HENRY</header>
+		<div class="navbar">
+			<a href="world_cricket2.html ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+		<img src="https://resources.pulse.icc-cricket.com/photo-resources/2020/10/27/3d11b01a-bd92-4c0e-9eaa-ffadd942e980/GettyImages-1129954717.jpg?width=440&height=248" width="680" height="453" align="right">
+		<p style="text-align: left;font-size: 25px;">A bustling pacer, who often sets the speed gun on fire, Matt Henry, has been trumpeted in the same breath as Shane Bond was when the latter burst onto the international stage. The comparisons do not end there. Henry too is prone to injuries, so much so that his career did not take off until an acute back surgery in 2012. The Canterbury speed merchant enjoyed a memorable ODI debut, snaring 4-38 to cap New Zealand's series win over India.
+
+A few months later, Henry was snapped up by Chennai in the 2014 Indian T20 League auctions. Despite not being picked in the final squad of 15 for 2015 Cricket World Cup, he was selected as a replacement for Adam Milne in the semi-final match against South Africa and was also a part of the team in the final against Australia. Since then, Henry has featured predominantly in New Zealand's squad across formats.
+
+Although Henry has been in the Kiwi setup in the formats, he has been most effective in white-ball cricket. Over the last couple of years, he has become a potent weapon for New Zealand although injuries have plagued his career at times. The 2016 Chappell-Hadlee series win at home saw Henry in full flow although the return series towards the end of that year saw him get some stick Down Under. However, he has produced quite a few impactful spells in the shorter formats.
+
+Henry is touted as a fine talent and it's ability to generate seam movement at good pace that makes him stand apart from the other New Zealand fast bowlers who are more reliant on swing than movement off the pitch. Injuries have meant that Henry has had to reduce his speeds a touch but he can still bowl a heavy ball and get the ball to move both ways. With age on his side, Henry along with Ferguson are fine back up pacers to have for an attack that is led by Southee and Boult, not to mention Wagner in between.
+
+World Cup - Through the years
+
+As Matt Henry had made his ODI debut just a year before World Cup 2015, the lanky fast bowler doesn't have much of an experience of playing in the tournament. Also, he wasn't a regular member of the side due to the presence of other senior pacers in New Zealand's bowling attack during WC 2015. He made his World Cup debut against South Africa during the semi-final of 2015 where the speedster went wicket-less and the final against Australia was only his second match of the tournament. The target set by Kiwis for Australia was only 183 and although Henry claimed two wickets in the match, he couldn't create much of an impact in the grand finale.
+
+The fact that he was selected for the knockouts of World Cup shows the potential Henry's got and how highly he is rated by the team management. Also, it would be interesting to see whether Matt gets to start in the playing XI in the initial matches of WC 2019. As it's going to be a long tournament, all 15 players are likely to play, therefore Henry needs to create an impact in the limited number of opportunities that come his way.
+</p>

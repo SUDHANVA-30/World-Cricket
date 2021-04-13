@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">COLIN MUNRO</header>
+		<div class="navbar">
+			<a href="worldcric.php">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+	<img src="https://circleofcricket.com/post_image/post_image_8464da6.jpg" width="680" height="483" align="right">
+	<p style="text-align: left;font-size: 25px;">New Zealand has no dearth of quality all-rounders and Colin Munro is one of those talented blokes. Born in Durban, Munro represents Auckland at domestic level and was also a part of the U19 team of the 2006 World Cup in Sri Lanka.
+
+Munro's entry in the domestic circuit was not very eye-catching but his consistent and fiery performances in the T20s came with time. He played a crucial role in Auckland's HRV Cup triumph and was later a part of the Auckland Aces team in the 2012 Champions League T20 in India.
+He finally got noticed by the selectors and made his T20I debut against South Africa in December 2012. An ODI debut in the same series followed. He scored his maiden ODI fifty in the 2nd match of the series. A Test cap followed soon after, but he was out on a golden duck in the first innings.
+Munro hit his second fifty in ODIs in New Zealand's humiliating series against Bangladesh in the final ODI and hit a quick-fire 73 off just 39 balls in the T20I that followed, giving New Zealand their only victory in the series.
+
+Since then, Munro was a regular feature of the New Zealand T20 side but has been in an out of the 50-over format owing to his inconsistencies. His naturally aggressive instinct and ability to take the game away from the opposition in a jiffy made him a tempting option for the selectors in the limited over cricket. The 2016-17 season was a breakthrough phase of sorts of Munro as consistent domestic performances saw him gets back into the ODI squad and he has performed fairly well since then.
+
+The year 2017 has been the best phase of Munro's career as he started to translate his potential into match-winning contributions. His form in the shortest format went up a notch as he became the fourth player (second New Zealander) to produce multiple T20I centuries after Chris Gayle, Brendon McCullum and Evin Lewis. The fact that he cracked both the tons in a space of barely six months speaks volumes of his confidence and touch. His 50-over fortunes have also picked up since the Kiwis decided to offer him the opening spot. Munro has been able to make an instant impact with his aggressive opening partner Martin Guptill.
+
+Munro's game went up another notch in the 2017-18 summer at home as he tore into the visiting West Indian bowling. He shone both in the ODIs and T20Is, scoring his third century in the shortest format thereby putting himself in a league of his own. While the southpaw has always had the power game without doubt, the small change that can be seen is his willingness to be more consistent. With the kind of dynamics in his batting, if he can be consistent, the opposition is likely to be sent on a leather hunt more often than not.
+
+A fit and firing Munro adds so much value to any side, especially in his current purple patch. His batting aside, he can also be a more than handy dibbly dobbly medium pacer particularly on sluggish tracks. Not surprisingly then, he has attracted buyers in most of the lucrative franchise T20 leagues in the world. He has been roped in by the Delhi daredevils for the 2018 IPL season. The southpaw with his destructive stroke play will be an integral part of New Zealand's plans as they look forward to the 2019 World Cup in England.</p>

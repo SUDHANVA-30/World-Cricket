@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ODI-Bowlers Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">BEN STOKES</header>
+		<div class="navbar">
+			<a href="world_cricket2.html ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+		<img src="https://www.thesun.co.uk/wp-content/uploads/2019/07/NINTCHDBPICT000505641331-e1563224144416.jpg" width="680" height="453" align="right">
+		<p style="text-align: left;font-size: 25px;">One of the most explosive all-rounders of the modern era, Ben Stokes's energy is infectious on the cricket field. He is extremely passionate everything that he does and being an aggressive character means that there is seldom a dull moment when he is around. An attacking southpaw with a penchant for the big hits while also being capable of playing a big innings, Stokes is also equally good with the ball. He can bowl at moderately high speeds and has a knack of providing breakthroughs when nothing seems to work for his team.
+
+Born on 4 June 1991 in Christchurch, New Zealand, Benjamin Andrew Stokes is the son of rugby league player, Gerald Stokes who represented New Zealand in international Rugby Leagues. His sublime talent was clear from an early age and it was no surprise that he signed on a 2-year county contract with Durham at the age of 18. He made his one-day debut against Surrey in 2009 and marked the occasion by snaring Mark Ramprakash with his 3rd delivery in FC cricket. He played 2 youth Tests against Bangladesh and excelled with both bat and ball. His talent was further noticed in the 2010 U-19 WC where he registered a century against India. He made his FC debut in the season opener against MCC at Abu Dhabi in 2010, scoring his first fifty and picking up a wicket.
+
+Stokes's consistent performances catapulted him into national reckoning and it was no surprise when he was named in the England ODI squad for the one-off match against Ireland and the home series against India. A broken finger meant that he could only play as a batsman. He struggled against India in the ODI series and was dropped from the subsequent away tour of India. After recuperating from the acute injury, Ben Stokes rebounded admirably, compiling 827 runs in addition to capturing 37 wickets at an average of 21.47. His resplendent all-round heroics saw his being ear-marked as the one to eventually fulfill the all-rounder's role that had not been filled since the retirement of Freddie Flintoff.
+
+Expectedly Stokes was named in the England lions development squad for the Australian tour but in a cruel quirk of fate, he was sent back home along with Kent pacer, Matt Coles, for repeated breaches of discipline and unprofessional conduct. Stokes tendered his apology for his irresponsible behaviour and vowed to return to top-flight cricket. He underwent rehabilitation and then earned the third seamer's slot for the One dayers against Australia on the back of his stupendous heroics in Durham's championship winning campaign. His maiden 5-fer, albeit in a losing cause, did not miss the brains trust of the English selectors as Ben Stokes was included in the 17-member squad for the 2013-14 return Ashes Down Under.</p>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>World_Cricket</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.C1{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		.logout{
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 20px;
+			background-color:red;
+			padding: 5px;
+			color: white;
+			width: 8%;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.book_tickets{
+				background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		
+		}
+		
+	</style>
+</head>
+<body>
+	<section>
+		<div class="C1" style="color: white;">MITCHELL SANTNER <ins style="margin: right; text-decoration: none;font-size: 20px; font-family: verdana;"></ins> </div>
+	<div class="navbar">
+		
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html" >ODI</a>
+				<a href="bowlers_ranking_test.html" >TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="domestic_league.html">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+</div>
+<body>
+<img src="https://t1.gstatic.com/images?q=tbn:ANd9GcR0R8uHQ-QnIftJjR3T5Q7tSPTrEyl0JXvvsjyyZjGCp0YToLK4Gg5wk_2Okike"  width="680" height="483" align="right">
+<p style="text-align: left;font-size: 25px;">Santner got his chance to represent New Zealand once Daniel Vettori decided to retire from the game. He is a like-for-like replacement of the veteran. Having played only 19 List A matches for Northern Districts, the selectors saw the potential in him and fast-tracked him to the national side. Santner was sent on the England tour to play a couple of practice games as some of the Kiwi players were absent due to their IPL commitments.
+
+In only his first game on English soil, Santner impressed everyone, not with the ball, but with the bat. The youngster scored 27 and 94 in the two innings. He was part of the Test squad, but didn't get an opportunity. However, he made his way in the side during the ODI series. He played all 5 matches - picked up 7 wickets and scored 97 runs. Though New Zealand lost the series 3-2, Santner was one of the positives to have come out. He, along with Ish Sodhi, makes New Zealand a decent spin attack these days.
+
+Since his debut, Santner has been an impressive prospect although the 2016-17 season has been a bit tough for the young man. Despite all the obvious talent, Santner has struggled to come to terms with what his stronger suit is. While some feel that he is a clever bowler who can bat a bit, it isn't wrong to call him a proper batsman considering this technique and temperament. For now, he is in the side as a bits-and-pieces cricketer who can do a bit of both. While this works in the shorter formats, it certainly won't merit his selection in red-ball cricket.
+
+Santner's batting particularly dipped during the 2016-17 phase while his bowling hasn't been that effective either. The emergence of spinners like Todd Astle and Ish Sodhi means that Santner will have to be on his toes to keep his spot in the side. While those leg spinners are better matchwinners with the ball, Santner's all-rounder prowess does give him an edge. However, if he continues to struggle with the bat, that would count for little. Santner did start 2018 brightly though and the IPL selection by CSK boosted him further, only for an injury to rule him out for a major part of the year. Considered by many as the next Daniel Vettori, the legend himself has rated Santner highly and hopes that the all-rounder can end up as one of the country's finest cricketers. In the IPL, Santner mostly finds himself on the bench due to senior overseas stars who hog most of the foreign slots in the CSK team. He has proved his worth in his limited opportunities and could be a more regular starter in the years to come.
+</p>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-Batsmen Ranking</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;	
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">CHRIS WOAKES</header>
+		<div class="navbar">
+			<a href="world_cricket2.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+		<img src="https://static.toiimg.com/thumb/msid-75893698,width-1200,height-900,resizemode-4/.jpg" width="680" height="453" align="right">
+		<p style="text-align: left; font-size: 25px;">Born on March 2, 1989, Chris Woakes made his First-Class debut against a touring West Indies 'A' side for Warwickshire in Birmingham in August 2006. Two years later, he made headlines by topping the bowling charts for his side in the season, picking up 42 wickets at an average of 20.57. His fine performances got him an entry into the England Lions side and also a place in the preliminary 2009 World T20 squad.
+
+In the same year, Woakes was near unplayable against the West Indies, bagging 6/43 in the first innings, bowling for the England Lions in a warm-up match. He is not just all about taking wickets with the ball, Woakes, is a very handy batsman too. He has a few First-Class centuries to his credit, with the most notable being an unbeaten 131 against Hampshire. During the course of that innings, he also shared a mammoth 222-run partnership for the ninth wicket with Jonathan Trott. His first international appearance came in the shortest format of the game, a T20I between England and Australia in January 2011. Woakes made his ODI debut against Australia in Sydney in 2011. Exactly a week later, on January 30, he registered his career-best figures of 6/45 against Australia in Brisbane.
+
+An injury to Tim Bresnan in August 2013 meant that Woakes made his Test debut at The Oval against the visiting Australians in the Ashes. He played a few county games after that and went to Australia later on to play matches in the Big Bash League for Sydney Thunder. Soon after, he travelled to Sri Lanka along with the England Lions to play some First-Class games against Sri Lanka 'A'. Woakes got a surprise call-up for England's T20 side to play the 2014 World T20 as a replacement for Ben Stokes, who injured himself banging a door in the dressing room after being dismissed cheaply in a T20I in West Indies.
+
+Since his return to the national side, Woakes has been impressive. He was even recalled to the Test side for the home series against India. In the ODIs that followed, Woakes was England's go-to bowler. He was the leader of the attack in Sri Lanka as James Anderson and Stuart Broad missed the tour due to injuries, he did his reputation no harm as he picked up 14 wickets in the seven-match series.
+
+There would be some major disappointment in store in the marquee 2015 World Cup where England would crash out in the group stages itself, despite the all-rounder having a fairly reasonable tournament on a personal level. Then came the Ashes where Woakes had to spend the summer on the sidelines owing to England's already star-studded bowling attack which had no vacancy. He had been doing a decent job, but there hadn't been any real standout performance which would make him undroppable. In the following ODI series, he was in and out of the side as the Three Lions would go down to a 2-3 scoreline.
+
+Stokes's emergence as a match-winning all-rounder meant that Woakes never sealed a spot in any format, being that they are similar players. And there is this unsaid belief, a baffling belief, of picking a team with variety. He wasn't even in the English squad for the World T20 in what would have been a major setback. But as fate would have it, an injury to Stokes opened up a place in the XI against the touring Lankans in 2016. An opportunity presented, an opportunity grabbed. Woakes made his presence felt and didn't look out of place in the company of Broad, Anderson and Finn. Then came the breakout Test. One which will remain etched in memory for a long time for various reasons. With 11 wickets in the match and a gutsy batting performance in both innings at Lord's against Pakistan, and following it up right through the fascinating series with tremendous consistency, Woakes has surely grabbed the brass ring.
+
+There are moments which define a player's career, and change it for good. That tour by Pakistan might just be it. Even though England did end up on the wrong side of the result. Woakes had a good IPL 2017, where he participated after England opened its doors for its players to participate in the cash-rich league. He formed an important member of Kolkata Knight Rider's pace battery, helping the franchise adapt from a slow-low to a pacy-bouncy track at the Eden Gardens.</p>
+	</body>

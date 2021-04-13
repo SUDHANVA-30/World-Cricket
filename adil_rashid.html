@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-BOWLERS RANKING</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">T20I-BOWLERS RANKING</header>
+		<div class="navbar">
+			<a href="worldcric.php ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+		<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2018/07/27/1265846-1238003965.jpg?itok=qavHaxGA"width="680" height="483" align="right">
+		<p style="text-align: left;font-size: 25px;">Is it fair to say Adil Rashid would have had a much better career at the international level if he wasn't representing England? Fair to say - Yes. The team's long researched aversion to any kind of spin has meant that a promising career has never quite taken off - at any format of the game. Come to think of this - Rashid made his One Day International (ODI) and Twenty20 (T20I) debut way back in 2009, but then had to wait six long years before he could bowl in whites.
+
+Rashid's Test selection came on the back of two back-to-back county championship wins for Yorkshire - his long loved club. Rashid had a very slow and painful start to his Test sojourn - getting smashed for almost 5 runs per over on his debut against Pakistan in Abu Dhabi. One of the major complaints about Rashid is his inability to string together quiet overs - he has the ability to take wickets - and he showed that aspect as well in the same Test - grabbing his maiden five-wicket haul.
+
+While the series against Pakistan was an educative experience, Rashid was expected to deliver the goods when he was chosen as the main spinner during England's arduous 7-Test tour of the sub-continent - with two Tests lined up against Bangladesh and a further five against India. Albeit against tough opposition, this was Rashid's chance to shine. He could make England's spinning spot his own if he were to come back with creditable figures.
+
+Rashid featured in all the seven Tests and finished with a haul of 30 wickets - not bad for a leg-spinner against the mighty sub-continental batsmen. But his consistency was sorely missing, there were as many as five four-wicket hauls, but none of them were converted into five-wicket hauls. The wickets came at a cost as well - not even once in his 12 bowling innings did he concede less than 3 RPO. England only managed one win out of seven, losing five and drawing one and Rashid was sent down the pecking order.
+
+Rashid hasn't played a Test since the India tour and his chances of gaining another 'Three Lions' cap looks bleak, considering England's allergy with men who turn the ball. While his immediate Test future doesn't look good, Rashid has become a vital part in the scheme of things in the new-look England ODI squad. His batting is a boost and although he continues to remain expensive, his ability to chip in with wickets has made him a valuable asset for Eoin Morgan.
+
+Rashid's bowling average isn't staggering while his economy of 5.5 is acceptable for a leg spinner in today's modern era. However, it's his knack of picking up wickets that has made him stand apart. While he appeared tensed in Test cricket due to the attacking fields that was given, thereby increasing the pressure on him to be accurate, it seems like Rashid loves the in-out fields that are in use for the shorter formats.
+
+With quite a few boundary riders in place, Rashid feels confident to flight the ball more and also finds his radar sooner than later. As for his Test feature, the team's constant away struggles (including the Ashes disaster) along with Moeen Ali's continuing ineffectiveness as a spinner might give him a comeback opportunity sooner than later. It's upto Rashid to grab that chance if and when it comes.
+
+While he has struggled in the longest format, Rashid has become a vital part in the scheme of things in the new-look England ODI squad. His batting is a boost and although he continues to remain expensive, his ability to chip in with wickets has made him a valuable asset for Eoin Morgan.
+
+Rashid, who had decided not to play red-ball cricket with his county, in a surprised/controversial move was recalled for the Test squad against the home Test series against India in 2018 following his performances against the same opponents in the 50-over format. Later that year, he was a key member of the England squad that whitewashed the Island nation in a 3-match Test series in Sri Lanka.
+
+Rashid was a crucial cog in England's famous World Cup victorious campaign and although he didn't take a truckload of wickets, he did ensure that England had a dominating presence, especially during the crucial middle-overs phase of the game.</p>

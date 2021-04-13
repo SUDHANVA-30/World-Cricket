@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20-BOWLERS RANKING</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+	<style type="text/css">
+		header{
+			text-align: left;
+			font-weight: bold;
+			font-family: 'Big Shoulders Inline Text', cursive;
+			color: #3c3c3c;
+			font-size: 70px;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+		}
+		table , th , td{
+			border:1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar a{
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn{
+			cursor: pointer;
+			font-size: 16px;
+			border:none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.navbar a:hover, .dropdown:hover ,.dropbtn:focus{
+			background-color: red;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		.dropdown-content a{
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover{
+			background-color: #ddd;
+
+		}
+		.show {
+			display: block;
+		}
+		.world{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+		.dom_league{
+			background-color: #3c3c3c;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); 
+			border:none;
+			outline: none;
+			margin: 0;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header style="color: white;">CHETESHWAR PUJARA</header>
+		<div class="navbar">
+			<a href="worldcric.php ">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myfunction()">Batsmen Ranking</button>
+					<i class="fa fa-caret-down"></i>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="batsmen_ranking_odi.html" >ODI</a>
+					<a href="batsmen_ranking_test.html" >TEST</a>
+					<a href="batsmen_ranking_t20.html" >T20</a>
+				</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction1()">Bowlers Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown1">
+				<a href="bowlers_ranking_odi.html">ODI</a>
+				<a href="bowlers_ranking_test.html">TEST</a>
+				<a href="bowlers_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+			<div class="dropdown">
+			<button class="dropbtn" onclick="myfunction2()">All-rounders Ranking</button>
+			<i class="fa fa-caret-down"></i>
+			<div class="dropdown-content" id="myDropdown2">
+				<a href="allrounders_ranking_odi.html">ODI</a>
+				<a href="allrounders_ranking_test.html">TEST</a>
+				<a href="allrounders_ranking_t20.html">T20</a>
+			</div>
+		</div> 
+		<button class="world"><a href="world_cup_info.html">World Cup Info</a></button>
+		<button class="dom_league"><a href="#">Domestic League</a></button>
+		<script type="text/javascript">
+			function myfunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction1(){
+				
+				document.getElementById("myDropdown1").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown1");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			function myfunction2(){
+				document.getElementById("myDropdown2").classList.toggle("show");
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown2");
+					if(myDropdown.classList.contains('show')){
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<body>
+	<img src="https://m.economictimes.com/thumb/msid-66981313,width-1200,height-900,resizemode-4,imgsize-490796/1.jpg" width="680" height="483" align="right">
+	<p style="text-align: left;font-size: 25px;">There was a whisper in the cricketing fraternity in the early 2000s – a boy from Saurashtra had just scored a triple-hundred at the Under-14 level. Then there were sightings: the same boy scored a double-hundred against England at the Under-19 level. The whispers got more prominent as he began to torment bowling attacks on his placid home-ground in Rajkot, and almost forced officials to change the playing conditions, such was his run-making prowess at the Ranji level.
+
+It was only a few years down the line that we came across small newspaper segments about the same boy with a squarer jawline and denser facial hair going by the name of Cheteshwar Pujara, scoring double-hundreds for breakfast and triple-hundreds for dinner at the Ranji level. After several years of being scoffed at for making runs on a flat Rajkot wicket, Cheteshwar Pujara started to seep into the minds of the selectors. In the minds of the India public, we had already found the natural successor to Rahul Dravid.
+
+Armed with an atavistic batting methodology and mindset, Pujara brings the best of both worlds to the table. His focus on the longer format is a much-needed change in the current set-up of world cricket, where instant glory and quick money in franchise-based leagues is slowly taking over from an era when Ranji trophy performance was paramount. His comparison to Rahul Dravid, however, is more to do with his dogged mindset than his technique.
+
+A phlegmatic and determined batsman, his technique is surprisingly bottom-handed, dependent on running his wrists through the ball, rather than punching it with his fore-arms. However, because of his straight-batted technique (coming down from first slip rather than gully), and his relatively young hands, he has managed to make it work by playing late and very close to his body.
+
+Cheteshwar Pujara got his inevitable national call-up in the home series against Australia in 2010. After an unplayable grubber pinned him LBW in the first innings, he walked out to bat in the number 3 position in the second-innings, instead of his 'predecessor' Rahul Dravid, and made a fluent 72 on a tricky 4th innings run-chase on a dry and turning wicket in Bangalore, becoming the fifth Indian to score a 4th innings half-century on debut. Pujara was subsequently picked for the South Africa tour of 2010/11 and played in the 2nd and 3rd Tests. He didn't make any significant contributions, but made it clear that he had the grit to stay out there with the senior batsmen. He showed improvement while playing in the second of his two Tests, standing up tall to play Morkel and opening up his stance. However, a knee injury during the 2011 IPL ruled him out of contention for the Australia and England tours later that year.</p>
